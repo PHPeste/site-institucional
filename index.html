@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHPeste - Evento de Tecnologia do Nordeste</title>
+    <!-- Google Fonts - Lexend -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'phpeste-text': '#795548',
+                        'phpeste-title': '#5B1E00',
+                        'phpeste-bg': '#ecc050',
+                        'phpeste-light': '#f5d78e',
+                        'phpeste-dark': '#3d1300',
+                    },
+                    fontFamily: {
+                        'lexend': ['Lexend', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-phpeste-bg text-phpeste-text font-lexend">
+    <!-- Navigation Menu -->
+    <nav class="shadow-lg fixed w-full top-0 z-50 bg-cover bg-center bg-no-repeat" style="background-image: url('images/assets/background-menu-1.webp');">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <h1 class="text-2xl font-bold text-phpeste-title">PHPeste</h1>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#sobre" class="text-phpeste-text hover:text-phpeste-title transition duration-300 font-medium">Sobre</a>
+                        <a href="#comunidades" class="text-phpeste-text hover:text-phpeste-title transition duration-300 font-medium">Comunidades</a>
+                        <a href="#porque-apoiar" class="text-phpeste-text hover:text-phpeste-title transition duration-300 font-medium">Por que apoiar?</a>
+                        <a href="#edicoes" class="text-phpeste-text hover:text-phpeste-title transition duration-300 font-medium">Edições</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-phpeste-text hover:text-phpeste-title focus:outline-none focus:text-phpeste-title">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden border-t border-phpeste-light bg-cover bg-center bg-no-repeat" style="background-image: url('images/assets/background-menu-1.webp');">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#sobre" class="block px-3 py-2 rounded-md text-phpeste-text hover:text-phpeste-title hover:bg-phpeste-light transition duration-300 font-medium">Sobre</a>
+                <a href="#comunidades" class="block px-3 py-2 rounded-md text-phpeste-text hover:text-phpeste-title hover:bg-phpeste-light transition duration-300 font-medium">Comunidades</a>
+                <a href="#porque-apoiar" class="block px-3 py-2 rounded-md text-phpeste-text hover:text-phpeste-title hover:bg-phpeste-light transition duration-300 font-medium">Por que apoiar?</a>
+                <a href="#edicoes" class="block px-3 py-2 rounded-md text-phpeste-text hover:text-phpeste-title hover:bg-phpeste-light transition duration-300 font-medium">Edições</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header/Hero Section -->
+    <header class="pt-16 min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat relative" style="background-image: url('images/assets/background-slide1.webp');">
+        <!-- Overlay para melhorar legibilidade do texto -->
+        <div class="absolute inset-0 bg-phpeste-bg bg-opacity-40"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center relative z-10">
+            <div class="space-y-8">
+                <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold text-phpeste-title leading-tight">
+                    PHPeste
+                </h1>
+                <p class="text-xl sm:text-2xl lg:text-3xl text-phpeste-text font-medium max-w-3xl mx-auto">
+                    A maior conferência de comunidades PHP do Nordeste Brasileiro
+                </p>
+                <p class="text-lg sm:text-xl text-phpeste-text max-w-2xl mx-auto">
+                    Conectando desenvolvedores, compartilhando conhecimento e celebrando a comunidade PHP nordestina
+                </p>
+                <div class="pt-8">
+                    <a href="#sobre" class="inline-block bg-phpeste-title text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-phpeste-dark transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                        Saiba mais
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl sm:text-5xl font-bold text-phpeste-title mb-4">
+                    Sobre a Conferência
+                </h2>
+                <div class="w-24 h-1 bg-phpeste-bg mx-auto"></div>
+            </div>
+
+            <div class="max-w-4xl mx-auto space-y-6 text-lg leading-relaxed">
+                <p>
+                    A PHPeste é um <strong class="text-phpeste-title">arretado encontro de tecnologia e desenvolvimento</strong> que reúne as comunidades "cabra da peste" de todo o Nordeste!
+                </p>
+
+                <p>
+                    Antes da PHPeste, a maioria dos grandes eventos de tecnologia acontecia lá pelo Sul e Sudeste do país, o que deixava muita gente daqui sem acesso a esse tipo de vivência. Foi daí que surgiu a ideia de fazer uma conferência itinerante, pra levar tecnologia, conhecimento e oportunidade pra perto do povo nordestino, fortalecendo nossas comunidades locais.
+                </p>
+
+                <p>
+                    Desde então, a PHPeste conferência já passou por um bocado de canto bom — <strong class="text-phpeste-title">João Pessoa (PB), Salvador (BA), Fortaleza (CE), São Luís (MA), Recife (PE), Natal (RN) e Parnaíba (PI)</strong> — espalhando aprendizado, prática e muito networking entre profissionais, estudantes e entusiastas da tecnologia.
+                </p>
+
+                <p>
+                    São <strong class="text-phpeste-title">três dias de pura imersão</strong>, cheios de palestras que inspiram, minicursos de botar a mão na massa e atividades pra trocar ideia e fazer amizade com gente "arretada da peste", que vem de todo canto pra compartilhar experiências e fortalecer nossa comunidade.
+                </p>
+
+                <p>
+                    A PHPeste conferência é feita de forma <strong class="text-phpeste-title">colaborativa e sem fins lucrativos</strong>, organizada por voluntários dos nove estados nordestinos — Alagoas, Bahia, Ceará, Maranhão, Paraíba, Pernambuco, Piauí, Rio Grande do Norte e Sergipe. Tudo isso pra diminuir os custos, baratear os ingressos e garantir que mais gente possa participar, aprender e crescer junto.
+                </p>
+
+                <p class="text-xl font-semibold text-phpeste-title text-center pt-8">
+                    Aqui, o que não falta é paixão, amizade e vontade de fazer o Nordeste brilhar ainda mais no cenário da tecnologia!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Comunidades Parceiras -->
+    <section id="comunidades" class="py-20 bg-phpeste-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl sm:text-5xl font-bold text-phpeste-title mb-4">
+                    Comunidades Parceiras
+                </h2>
+                <div class="w-24 h-1 bg-phpeste-title mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+                <!-- PHP Com Rapadura -->
+                <div class="flex items-center justify-center p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <img src="images/communities/php-com-rapadura.webp" alt="PHP Com Rapadura" class="max-w-full h-auto object-contain">
+                </div>
+
+                <!-- PHP Paraíba -->
+                <div class="flex items-center justify-center p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <img src="images/communities/php-pb.webp" alt="PHP Paraíba" class="max-w-full h-auto object-contain">
+                </div>
+
+                <!-- PHP Bahia -->
+                <div class="flex items-center justify-center p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <img src="images/communities/php-ba.webp" alt="PHP Bahia" class="max-w-full h-auto object-contain">
+                </div>
+
+                <!-- PHP Pernambuco -->
+                <div class="flex items-center justify-center p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <img src="images/communities/php-pe.webp" alt="PHP Pernambuco" class="max-w-full h-auto object-contain">
+                </div>
+
+                <!-- PHP Maranhão -->
+                <div class="flex items-center justify-center p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <img src="images/communities/php-ma.webp" alt="PHP Maranhão" class="max-w-full h-auto object-contain">
+                </div>
+
+                <!-- Arretadas PHP -->
+                <div class="flex items-center justify-center p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <img src="images/communities/arretadas-php.webp" alt="Arretadas PHP" class="max-w-full h-auto object-contain">
+                </div>
+
+                <!-- PHP Women -->
+                <div class="flex items-center justify-center p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <img src="images/communities/php-women.webp" alt="PHP Women" class="max-w-full h-auto object-contain">
+                </div>
+
+                <!-- PHP Rio Grande do Norte -->
+                <div class="flex items-center justify-center p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <img src="images/communities/php-rn.webp" alt="PHP Rio Grande do Norte" class="max-w-full h-auto object-contain">
+                </div>
+
+                <!-- PHP Rio -->
+                <div class="flex items-center justify-center p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <img src="images/communities/php-rio.webp" alt="PHP Rio" class="max-w-full h-auto object-contain">
+                </div>
+
+                <!-- PHP São Paulo -->
+                <div class="flex items-center justify-center p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <img src="images/communities/php-sp.webp" alt="PHP São Paulo" class="max-w-full h-auto object-contain">
+                </div>
+
+                <!-- Vale Livre -->
+                <div class="flex items-center justify-center p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <img src="images/communities/vale-livre.webp" alt="Vale Livre" class="max-w-full h-auto object-contain">
+                </div>
+
+                <!-- PHP Rio Grande do Sul -->
+                <div class="flex items-center justify-center p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <img src="images/communities/php-rs.webp" alt="PHP Rio Grande do Sul" class="max-w-full h-auto object-contain">
+                </div>
+
+                <!-- PHP Minas Gerais -->
+                <div class="flex items-center justify-center p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <img src="images/communities/php-mg.webp" alt="PHP Minas Gerais" class="max-w-full h-auto object-contain">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Porque Apoiar -->
+    <section id="porque-apoiar" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl sm:text-5xl font-bold text-phpeste-title mb-4">
+                    Por que apoiar?
+                </h2>
+                <div class="w-24 h-1 bg-phpeste-bg mx-auto"></div>
+            </div>
+
+            <div class="max-w-4xl mx-auto space-y-6 text-lg leading-relaxed mb-16">
+                <p>
+                    A PHPeste conferência reúne um <strong class="text-phpeste-title">público diverso e engajado</strong>, formado por pessoas desenvolvedoras, arquitetas, engenheiras de software, gerentes de TI, entusiastas e empresárias de todo o Nordeste.
+                </p>
+
+                <p>
+                    Apoiar a PHPeste é <strong class="text-phpeste-title">associar sua marca a uma iniciativa colaborativa</strong>, que promove aprendizado, inovação e o desenvolvimento tecnológico do país. Além de ampla visibilidade, o evento oferece uma excelente oportunidade para capacitar equipes, apresentar soluções, recrutar talentos e estabelecer novas parcerias de negócio.
+                </p>
+
+                <p>
+                    Com edições que já trouxeram <strong class="text-phpeste-title">nomes de destaque nacionais e internacionais</strong>, a PHPeste envolve uma comunidade vibrante e ativa em todo o Brasil. Hoje, o evento alcança mais de <strong class="text-phpeste-title">7 mil pessoas diretamente</strong> em grupos de Telegram, Instagram, X (Twitter) e Facebook, além de impactar uma audiência tech estimada em mais de <strong class="text-phpeste-title">200 mil usuários</strong> nas redes sociais, um público altamente qualificado e conectado com o universo da tecnologia.
+                </p>
+            </div>
+
+            <!-- Gráfico de Público ao Longo dos Anos -->
+            <div class="mt-16">
+                <h3 class="text-3xl font-bold text-phpeste-title text-center mb-12">
+                    Público ao Longo dos Anos
+                </h3>
+
+                <div class="bg-phpeste-light rounded-lg p-8 shadow-lg">
+                    <!-- Labels dos Estados -->
+                    <div class="space-y-4">
+                        <!-- PB 2015 -->
+                        <div class="flex items-center gap-4">
+                            <div class="w-32 text-right font-semibold text-phpeste-title">
+                                <span class="block">PB</span>
+                                <span class="text-sm text-phpeste-text">2015</span>
+                            </div>
+                            <div class="flex-1 bg-white rounded-lg overflow-hidden">
+                                <div class="bg-phpeste-title h-12 flex items-center justify-end pr-4 text-white font-bold transition-all duration-500 hover:opacity-90" style="width: 46.8%;">
+                                    193
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- BA 2016 -->
+                        <div class="flex items-center gap-4">
+                            <div class="w-32 text-right font-semibold text-phpeste-title">
+                                <span class="block">BA</span>
+                                <span class="text-sm text-phpeste-text">2016</span>
+                            </div>
+                            <div class="flex-1 bg-white rounded-lg overflow-hidden">
+                                <div class="bg-phpeste-title h-12 flex items-center justify-end pr-4 text-white font-bold transition-all duration-500 hover:opacity-90" style="width: 51.2%;">
+                                    211
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CE 2017 -->
+                        <div class="flex items-center gap-4">
+                            <div class="w-32 text-right font-semibold text-phpeste-title">
+                                <span class="block">CE</span>
+                                <span class="text-sm text-phpeste-text">2017</span>
+                            </div>
+                            <div class="flex-1 bg-white rounded-lg overflow-hidden">
+                                <div class="bg-phpeste-title h-12 flex items-center justify-end pr-4 text-white font-bold transition-all duration-500 hover:opacity-90" style="width: 71.8%;">
+                                    296
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- MA 2018 -->
+                        <div class="flex items-center gap-4">
+                            <div class="w-32 text-right font-semibold text-phpeste-title">
+                                <span class="block">MA</span>
+                                <span class="text-sm text-phpeste-text">2018</span>
+                            </div>
+                            <div class="flex-1 bg-white rounded-lg overflow-hidden">
+                                <div class="bg-phpeste-title h-12 flex items-center justify-end pr-4 text-white font-bold transition-all duration-500 hover:opacity-90" style="width: 49.8%;">
+                                    205
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PE 2019 -->
+                        <div class="flex items-center gap-4">
+                            <div class="w-32 text-right font-semibold text-phpeste-title">
+                                <span class="block">PE</span>
+                                <span class="text-sm text-phpeste-text">2019</span>
+                            </div>
+                            <div class="flex-1 bg-white rounded-lg overflow-hidden">
+                                <div class="bg-phpeste-title h-12 flex items-center justify-end pr-4 text-white font-bold transition-all duration-500 hover:opacity-90" style="width: 52.7%;">
+                                    217
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- RN 2022 -->
+                        <div class="flex items-center gap-4">
+                            <div class="w-32 text-right font-semibold text-phpeste-title">
+                                <span class="block">RN</span>
+                                <span class="text-sm text-phpeste-text">2022</span>
+                            </div>
+                            <div class="flex-1 bg-white rounded-lg overflow-hidden">
+                                <div class="bg-phpeste-title h-12 flex items-center justify-end pr-4 text-white font-bold transition-all duration-500 hover:opacity-90" style="width: 35.4%;">
+                                    146
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CE 2023 -->
+                        <div class="flex items-center gap-4">
+                            <div class="w-32 text-right font-semibold text-phpeste-title">
+                                <span class="block">CE</span>
+                                <span class="text-sm text-phpeste-text">2023</span>
+                            </div>
+                            <div class="flex-1 bg-white rounded-lg overflow-hidden">
+                                <div class="bg-phpeste-title h-12 flex items-center justify-end pr-4 text-white font-bold transition-all duration-500 hover:opacity-90" style="width: 100%;">
+                                    412
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PE 2024 -->
+                        <div class="flex items-center gap-4">
+                            <div class="w-32 text-right font-semibold text-phpeste-title">
+                                <span class="block">PE</span>
+                                <span class="text-sm text-phpeste-text">2024</span>
+                            </div>
+                            <div class="flex-1 bg-white rounded-lg overflow-hidden">
+                                <div class="bg-phpeste-title h-12 flex items-center justify-end pr-4 text-white font-bold transition-all duration-500 hover:opacity-90" style="width: 78.9%;">
+                                    325
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PI 2025 -->
+                        <div class="flex items-center gap-4">
+                            <div class="w-32 text-right font-semibold text-phpeste-title">
+                                <span class="block">PI</span>
+                                <span class="text-sm text-phpeste-text">2025</span>
+                            </div>
+                            <div class="flex-1 bg-white rounded-lg overflow-hidden">
+                                <div class="bg-phpeste-title h-12 flex items-center justify-end pr-4 text-white font-bold transition-all duration-500 hover:opacity-90" style="width: 29.9%;">
+                                    123
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Legenda -->
+                    <div class="mt-8 text-center text-phpeste-text">
+                        <p class="text-sm">Número de inscritos por edição</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Timeline de Edições -->
+    <section id="edicoes" class="py-20 bg-phpeste-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl sm:text-5xl font-bold text-phpeste-title mb-4">
+                    Edições
+                </h2>
+                <div class="w-24 h-1 bg-phpeste-title mx-auto"></div>
+            </div>
+
+            <!-- Timeline Container -->
+            <div class="relative">
+                <!-- Linha vertical central -->
+                <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 bg-phpeste-title h-full"></div>
+
+                <!-- Timeline Items -->
+                <div class="space-y-12">
+
+                    <!-- 2015 - João Pessoa, PB (Sem imagem) -->
+                    <div class="relative flex flex-col md:flex-row items-center">
+                        <!-- Lado Esquerdo (Desktop) -->
+                        <div class="md:w-1/2 md:pr-12 mb-8 md:mb-0">
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 md:ml-auto md:max-w-md">
+                                <div class="p-6 bg-phpeste-title">
+                                    <h3 class="text-2xl font-bold text-white">2015 - João Pessoa, PB</h3>
+                                    <p class="text-phpeste-light mt-2">193 participantes</p>
+                                </div>
+                                <div class="p-6">
+                                    <p class="text-phpeste-text">
+                                        A primeira edição da PHPeste aconteceu em João Pessoa, marcando o início de uma jornada que levaria tecnologia e conhecimento por todo o Nordeste.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Círculo Central -->
+                        <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-phpeste-title rounded-full border-4 border-white shadow-lg z-10"></div>
+                        <!-- Lado Direito (Desktop) - Vazio -->
+                        <div class="md:w-1/2"></div>
+                    </div>
+
+                    <!-- 2016 - Salvador, BA -->
+                    <div class="relative flex flex-col md:flex-row items-center">
+                        <!-- Lado Esquerdo (Desktop) - Vazio -->
+                        <div class="md:w-1/2"></div>
+                        <!-- Círculo Central -->
+                        <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-phpeste-title rounded-full border-4 border-white shadow-lg z-10"></div>
+                        <!-- Lado Direito (Desktop) -->
+                        <div class="md:w-1/2 md:pl-12">
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 md:max-w-md">
+                                <div class="h-48 bg-cover bg-center" style="background-image: url('images/editions/background-salvador-2016.webp');"></div>
+                                <div class="p-6 bg-phpeste-title">
+                                    <h3 class="text-2xl font-bold text-white">2016 - Salvador, BA</h3>
+                                    <p class="text-phpeste-light mt-2">211 participantes</p>
+                                </div>
+                                <div class="p-6">
+                                    <p class="text-phpeste-text">
+                                        A segunda edição chegou à Bahia, expandindo o alcance do evento e fortalecendo a comunidade PHP no Nordeste.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2017 - Fortaleza, CE -->
+                    <div class="relative flex flex-col md:flex-row items-center">
+                        <!-- Lado Esquerdo (Desktop) -->
+                        <div class="md:w-1/2 md:pr-12 mb-8 md:mb-0">
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 md:ml-auto md:max-w-md">
+                                <div class="h-48 bg-cover bg-center" style="background-image: url('images/editions/background-fortaleza-2017.webp');"></div>
+                                <div class="p-6 bg-phpeste-title">
+                                    <h3 class="text-2xl font-bold text-white">2017 - Fortaleza, CE</h3>
+                                    <p class="text-phpeste-light mt-2">296 participantes</p>
+                                </div>
+                                <div class="p-6">
+                                    <p class="text-phpeste-text">
+                                        Fortaleza recebeu a conferência com grande entusiasmo, alcançando um número expressivo de participantes.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Círculo Central -->
+                        <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-phpeste-title rounded-full border-4 border-white shadow-lg z-10"></div>
+                        <!-- Lado Direito (Desktop) - Vazio -->
+                        <div class="md:w-1/2"></div>
+                    </div>
+
+                    <!-- 2018 - São Luís, MA -->
+                    <div class="relative flex flex-col md:flex-row items-center">
+                        <!-- Lado Esquerdo (Desktop) - Vazio -->
+                        <div class="md:w-1/2"></div>
+                        <!-- Círculo Central -->
+                        <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-phpeste-title rounded-full border-4 border-white shadow-lg z-10"></div>
+                        <!-- Lado Direito (Desktop) -->
+                        <div class="md:w-1/2 md:pl-12">
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 md:max-w-md">
+                                <div class="h-48 bg-cover bg-center" style="background-image: url('images/editions/background-saoluis-2018.webp');"></div>
+                                <div class="p-6 bg-phpeste-title">
+                                    <h3 class="text-2xl font-bold text-white">2018 - São Luís, MA</h3>
+                                    <p class="text-phpeste-light mt-2">205 participantes</p>
+                                </div>
+                                <div class="p-6">
+                                    <p class="text-phpeste-text">
+                                        O Maranhão foi palco de mais uma edição memorável, levando conhecimento e networking para a comunidade local.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2019 - Recife, PE -->
+                    <div class="relative flex flex-col md:flex-row items-center">
+                        <!-- Lado Esquerdo (Desktop) -->
+                        <div class="md:w-1/2 md:pr-12 mb-8 md:mb-0">
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 md:ml-auto md:max-w-md">
+                                <div class="h-48 bg-cover bg-center" style="background-image: url('images/editions/background-recife-2019.webp');"></div>
+                                <div class="p-6 bg-phpeste-title">
+                                    <h3 class="text-2xl font-bold text-white">2019 - Recife, PE</h3>
+                                    <p class="text-phpeste-light mt-2">217 participantes</p>
+                                </div>
+                                <div class="p-6">
+                                    <p class="text-phpeste-text">
+                                        Recife acolheu a comunidade PHP com toda a energia pernambucana, celebrando tecnologia e inovação.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Círculo Central -->
+                        <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-phpeste-title rounded-full border-4 border-white shadow-lg z-10"></div>
+                        <!-- Lado Direito (Desktop) - Vazio -->
+                        <div class="md:w-1/2"></div>
+                    </div>
+
+                    <!-- 2022 - Natal, RN -->
+                    <div class="relative flex flex-col md:flex-row items-center">
+                        <!-- Lado Esquerdo (Desktop) - Vazio -->
+                        <div class="md:w-1/2"></div>
+                        <!-- Círculo Central -->
+                        <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-phpeste-title rounded-full border-4 border-white shadow-lg z-10"></div>
+                        <!-- Lado Direito (Desktop) -->
+                        <div class="md:w-1/2 md:pl-12">
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 md:max-w-md">
+                                <div class="h-48 bg-cover bg-center" style="background-image: url('images/editions/background-natal-2022.webp');"></div>
+                                <div class="p-6 bg-phpeste-title">
+                                    <h3 class="text-2xl font-bold text-white">2022 - Natal, RN</h3>
+                                    <p class="text-phpeste-light mt-2">146 participantes</p>
+                                </div>
+                                <div class="p-6">
+                                    <p class="text-phpeste-text">
+                                        Após a pandemia, a PHPeste retornou em Natal, reencontrando a comunidade presencialmente com muita emoção.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2023 - Fortaleza, CE -->
+                    <div class="relative flex flex-col md:flex-row items-center">
+                        <!-- Lado Esquerdo (Desktop) -->
+                        <div class="md:w-1/2 md:pr-12 mb-8 md:mb-0">
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 md:ml-auto md:max-w-md">
+                                <div class="h-48 bg-cover bg-center" style="background-image: url('images/editions/background-fortaleza-2023.JPG');"></div>
+                                <div class="p-6 bg-phpeste-title">
+                                    <h3 class="text-2xl font-bold text-white">2023 - Fortaleza, CE</h3>
+                                    <p class="text-phpeste-light mt-2">412 participantes</p>
+                                </div>
+                                <div class="p-6">
+                                    <p class="text-phpeste-text">
+                                        Fortaleza recebeu novamente a PHPeste, batendo o recorde de participantes e consolidando o evento como o maior do Nordeste.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Círculo Central -->
+                        <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-phpeste-title rounded-full border-4 border-white shadow-lg z-10"></div>
+                        <!-- Lado Direito (Desktop) - Vazio -->
+                        <div class="md:w-1/2"></div>
+                    </div>
+
+                    <!-- 2024 - Recife, PE -->
+                    <div class="relative flex flex-col md:flex-row items-center">
+                        <!-- Lado Esquerdo (Desktop) - Vazio -->
+                        <div class="md:w-1/2"></div>
+                        <!-- Círculo Central -->
+                        <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-phpeste-title rounded-full border-4 border-white shadow-lg z-10"></div>
+                        <!-- Lado Direito (Desktop) -->
+                        <div class="md:w-1/2 md:pl-12">
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 md:max-w-md">
+                                <div class="h-48 bg-cover bg-center" style="background-image: url('images/editions/background-recife-2024.JPG');"></div>
+                                <div class="p-6 bg-phpeste-title">
+                                    <h3 class="text-2xl font-bold text-white">2024 - Recife, PE</h3>
+                                    <p class="text-phpeste-light mt-2">325 participantes</p>
+                                </div>
+                                <div class="p-6">
+                                    <p class="text-phpeste-text">
+                                        Recife voltou a sediar o evento com grande sucesso, mostrando a força da comunidade pernambucana.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2025 - Parnaíba, PI -->
+                    <div class="relative flex flex-col md:flex-row items-center">
+                        <!-- Lado Esquerdo (Desktop) -->
+                        <div class="md:w-1/2 md:pr-12 mb-8 md:mb-0">
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 md:ml-auto md:max-w-md">
+                                <div class="h-48 bg-cover bg-center" style="background-image: url('images/editions/background-parnaiba-2025.jpg');"></div>
+                                <div class="p-6 bg-phpeste-title">
+                                    <h3 class="text-2xl font-bold text-white">2025 - Parnaíba, PI</h3>
+                                    <p class="text-phpeste-light mt-2">123 participantes</p>
+                                </div>
+                                <div class="p-6">
+                                    <p class="text-phpeste-text">
+                                        O Piauí foi palco dessa edição especial, levando a PHPeste para mais um estado nordestino e ampliando ainda mais nossa comunidade.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Círculo Central -->
+                        <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-phpeste-title rounded-full border-4 border-white shadow-lg z-10"></div>
+                        <!-- Lado Direito (Desktop) - Vazio -->
+                        <div class="md:w-1/2"></div>
+                    </div>
+
+                    <!-- 2026 - São Luís, MA -->
+                    <div class="relative flex flex-col md:flex-row items-center">
+                        <!-- Lado Esquerdo (Desktop) - Vazio -->
+                        <div class="md:w-1/2"></div>
+                        <!-- Círculo Central -->
+                        <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-phpeste-title rounded-full border-4 border-white shadow-lg z-10"></div>
+                        <!-- Lado Direito (Desktop) -->
+                        <div class="md:w-1/2 md:pl-12">
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 md:max-w-md border-4 border-phpeste-title">
+                                <div class="p-6 bg-gradient-to-br from-phpeste-title to-phpeste-dark">
+                                    <h3 class="text-2xl font-bold text-white">2026 - São Luís, MA</h3>
+                                    <p class="text-phpeste-light mt-2">Em breve!</p>
+                                </div>
+                                <div class="p-6">
+                                    <p class="text-phpeste-text font-semibold">
+                                        A próxima edição já está confirmada! São Luís do Maranhão receberá novamente a PHPeste, prometendo mais aprendizado, networking e fortalecimento da comunidade tech nordestina.
+                                    </p>
+                                    <p class="text-phpeste-title mt-4 text-center font-bold">
+                                        Fique ligado para mais novidades!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
