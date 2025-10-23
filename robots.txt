@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Sitemap: https://phpeste.org/sitemap.xml
+
+# Allow all crawlers to access all content
+# PHPeste - Conferência de PHP do Nordeste
+# https://phpeste.org
+
+# Disallow: /admin/ (uncomment if you have admin areas)
