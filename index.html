@@ -70,32 +70,28 @@
         }
     </script>
 
-    <!-- Structured Data (JSON-LD) -->
+    <!-- Structured Data (JSON-LD) - Event Series -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Event",
+        "@type": "EventSeries",
         "name": "PHPeste",
-        "description": "A maior conferência de comunidades PHP do Nordeste Brasileiro. Evento anual, comunitário, independente e itinerante, dedicado à promoção do ecossistema PHP no Nordeste.",
+        "description": "Conferência anual, comunitária e itinerante de PHP do Nordeste Brasileiro desde 2015. A maior série de eventos de PHP da região, promovendo inclusão, tecnologia e valorização da cultura nordestina.",
         "image": "https://phpeste.org/images/phpeste-social-share.jpg",
-        "startDate": "2026-10-08",
-        "endDate": "2026-10-10",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-        "location": {
-            "@type": "Place",
-            "name": "São Luís",
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "São Luís",
-                "addressRegion": "MA",
-                "addressCountry": "BR"
-            }
+        "startDate": "2015-10-08",
+        "url": "https://phpeste.org",
+        "eventSchedule": {
+            "@type": "Schedule",
+            "repeatFrequency": "P1Y",
+            "byMonth": 10,
+            "byMonthDay": 8,
+            "duration": "P3D"
         },
         "organizer": {
             "@type": "Organization",
             "name": "Comunidade PHP Nordeste",
             "url": "https://phpeste.org",
+            "foundingDate": "2015",
             "sameAs": [
                 "https://instagram.com/phpeste",
                 "https://t.me/phpeste",
@@ -103,10 +99,26 @@
                 "https://facebook.com/phpeste"
             ]
         },
-        "performer": {
-            "@type": "Organization",
-            "name": "Comunidade PHP do Nordeste"
-        }
+        "subEvent": [
+            {
+                "@type": "Event",
+                "name": "PHPeste 2026",
+                "startDate": "2026-10-08",
+                "endDate": "2026-10-10",
+                "eventStatus": "https://schema.org/EventScheduled",
+                "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+                "location": {
+                    "@type": "Place",
+                    "name": "São Luís, MA",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "São Luís",
+                        "addressRegion": "MA",
+                        "addressCountry": "BR"
+                    }
+                }
+            }
+        ]
     }
     </script>
 
@@ -165,13 +177,16 @@
             <div class="flex justify-between items-center h-16">
                 <!-- Logo -->
                 <div class="flex-shrink-0">
-                    <h1 class="text-2xl font-bold text-phpeste-title">PHPeste</h1>
+                    <a href="#" class="flex items-center">
+                        <img src="images/assets/phpeste_marrom.png" alt="PHPeste" class="h-10 w-auto">
+                    </a>
                 </div>
 
                 <!-- Desktop Menu -->
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
                         <a href="#sobre" class="text-phpeste-text hover:text-phpeste-title transition duration-300 font-medium">Sobre</a>
+                        <a href="#impacto" class="text-phpeste-text hover:text-phpeste-title transition duration-300 font-medium">Impacto</a>
                         <a href="#comunidades" class="text-phpeste-text hover:text-phpeste-title transition duration-300 font-medium">Comunidades</a>
                         <a href="#porque-apoiar" class="text-phpeste-text hover:text-phpeste-title transition duration-300 font-medium">Por que apoiar?</a>
                         <a href="#edicoes" class="text-phpeste-text hover:text-phpeste-title transition duration-300 font-medium">Edições</a>
@@ -194,6 +209,7 @@
         <div id="mobile-menu" class="hidden md:hidden border-t border-phpeste-light bg-cover bg-center bg-no-repeat" style="background-image: url('images/assets/background-menu-1.webp');">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a href="#sobre" class="block px-3 py-2 rounded-md text-phpeste-text hover:text-phpeste-title hover:bg-phpeste-light transition duration-300 font-medium">Sobre</a>
+                <a href="#impacto" class="block px-3 py-2 rounded-md text-phpeste-text hover:text-phpeste-title hover:bg-phpeste-light transition duration-300 font-medium">Impacto</a>
                 <a href="#comunidades" class="block px-3 py-2 rounded-md text-phpeste-text hover:text-phpeste-title hover:bg-phpeste-light transition duration-300 font-medium">Comunidades</a>
                 <a href="#porque-apoiar" class="block px-3 py-2 rounded-md text-phpeste-text hover:text-phpeste-title hover:bg-phpeste-light transition duration-300 font-medium">Por que apoiar?</a>
                 <a href="#edicoes" class="block px-3 py-2 rounded-md text-phpeste-text hover:text-phpeste-title hover:bg-phpeste-light transition duration-300 font-medium">Edições</a>
@@ -209,12 +225,18 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center relative z-10">
             <div class="space-y-8">
                 <h1 class="absolute w-px h-px p-0 -m-px overflow-hidden whitespace-nowrap border-0">PHPeste - A maior conferência de PHP do Nordeste Brasileiro</h1>
-                <div class="flex justify-center">
+                <div class="flex flex-col items-center gap-4">
                     <img
                         src="images/assets/phpeste_marrom.png"
                         alt="PHPeste - A maior conferência de PHP do Nordeste"
                         class="w-64 sm:w-80 md:w-96 lg:w-[28rem] xl:w-[32rem] h-auto"
                     >
+                    <div class="inline-flex items-center gap-2 bg-phpeste-title text-white px-6 py-2 rounded-full shadow-lg">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        <span class="font-semibold">Desde 2015</span>
+                    </div>
                 </div>
                 <p class="text-xl sm:text-2xl lg:text-3xl text-phpeste-text font-medium max-w-3xl mx-auto">
                     A maior conferência de comunidades PHP do Nordeste Brasileiro
@@ -265,6 +287,136 @@
                 <p class="text-xl font-semibold text-phpeste-title text-center pt-8">
                     Aqui, o que não falta é paixão, amizade e vontade de fazer o Nordeste brilhar ainda mais no cenário da tecnologia!
                 </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Impacto em Números -->
+    <section id="impacto" class="py-20 bg-phpeste-bg" aria-labelledby="impacto-heading">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 id="impacto-heading" class="text-4xl sm:text-5xl font-bold text-phpeste-title mb-4">
+                    Nosso Impacto
+                </h2>
+                <div class="w-24 h-1 bg-phpeste-title mx-auto mb-6"></div>
+                <p class="text-xl text-phpeste-text max-w-3xl mx-auto">
+                    Uma década conectando desenvolvedores e fortalecendo o ecossistema PHP do Nordeste
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Card: Participantes -->
+                <div class="bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="flex items-center justify-center w-16 h-16 bg-phpeste-light rounded-full mb-4 mx-auto">
+                        <svg class="w-8 h-8 text-phpeste-title" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-phpeste-title mb-2">+2.000</div>
+                        <div class="text-phpeste-text font-medium">Participantes</div>
+                        <div class="text-sm text-gray-500 mt-2">Ao longo de 9 edições</div>
+                    </div>
+                </div>
+
+                <!-- Card: Edições -->
+                <div class="bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="flex items-center justify-center w-16 h-16 bg-phpeste-light rounded-full mb-4 mx-auto">
+                        <svg class="w-8 h-8 text-phpeste-title" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-phpeste-title mb-2">9</div>
+                        <div class="text-phpeste-text font-medium">Edições Realizadas</div>
+                        <div class="text-sm text-gray-500 mt-2">De 2015 a 2025</div>
+                    </div>
+                </div>
+
+                <!-- Card: Estados -->
+                <div class="bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="flex items-center justify-center w-16 h-16 bg-phpeste-light rounded-full mb-4 mx-auto">
+                        <svg class="w-8 h-8 text-phpeste-title" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-phpeste-title mb-2">7</div>
+                        <div class="text-phpeste-text font-medium">Estados Nordestinos</div>
+                        <div class="text-sm text-gray-500 mt-2">PB, BA, CE, MA, PE, RN, PI</div>
+                    </div>
+                </div>
+
+                <!-- Card: Alcance -->
+                <div class="bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="flex items-center justify-center w-16 h-16 bg-phpeste-light rounded-full mb-4 mx-auto">
+                        <svg class="w-8 h-8 text-phpeste-title" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+                        </svg>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-phpeste-title mb-2">+200k</div>
+                        <div class="text-phpeste-text font-medium">Alcance nas Redes</div>
+                        <div class="text-sm text-gray-500 mt-2">Audiência tech estimada</div>
+                    </div>
+                </div>
+
+                <!-- Card: Anos de História -->
+                <div class="bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="flex items-center justify-center w-16 h-16 bg-phpeste-light rounded-full mb-4 mx-auto">
+                        <svg class="w-8 h-8 text-phpeste-title" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-phpeste-title mb-2">10</div>
+                        <div class="text-phpeste-text font-medium">Anos de História</div>
+                        <div class="text-sm text-gray-500 mt-2">2015 - 2025</div>
+                    </div>
+                </div>
+
+                <!-- Card: Comunidades -->
+                <div class="bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="flex items-center justify-center w-16 h-16 bg-phpeste-light rounded-full mb-4 mx-auto">
+                        <svg class="w-8 h-8 text-phpeste-title" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-phpeste-title mb-2">13+</div>
+                        <div class="text-phpeste-text font-medium">Comunidades Parceiras</div>
+                        <div class="text-sm text-gray-500 mt-2">De todo o Brasil</div>
+                    </div>
+                </div>
+
+                <!-- Card: Dias de Imersão -->
+                <div class="bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="flex items-center justify-center w-16 h-16 bg-phpeste-light rounded-full mb-4 mx-auto">
+                        <svg class="w-8 h-8 text-phpeste-title" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-phpeste-title mb-2">3</div>
+                        <div class="text-phpeste-text font-medium">Dias de Imersão</div>
+                        <div class="text-sm text-gray-500 mt-2">Por edição</div>
+                    </div>
+                </div>
+
+                <!-- Card: Sem Fins Lucrativos -->
+                <div class="bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="flex items-center justify-center w-16 h-16 bg-phpeste-light rounded-full mb-4 mx-auto">
+                        <svg class="w-8 h-8 text-phpeste-title" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                        </svg>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-phpeste-title mb-2">100%</div>
+                        <div class="text-phpeste-text font-medium">Sem Fins Lucrativos</div>
+                        <div class="text-sm text-gray-500 mt-2">Organização voluntária</div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -364,12 +516,130 @@
                 </p>
 
                 <p>
-                    Apoiar a PHPeste é <strong class="text-phpeste-title">associar sua marca a uma iniciativa colaborativa</strong>, que promove aprendizado, inovação e o desenvolvimento tecnológico do país. Além de ampla visibilidade, A conferência oferece uma excelente oportunidade para capacitar equipes, apresentar soluções, recrutar talentos e estabelecer novas parcerias de negócio.
+                    Apoiar a PHPeste é <strong class="text-phpeste-title">associar sua marca a uma iniciativa colaborativa</strong>, que promove aprendizado, inovação e o desenvolvimento tecnológico do país. Além de ampla visibilidade, a conferência oferece uma excelente oportunidade para capacitar equipes, apresentar soluções, recrutar talentos e estabelecer novas parcerias de negócio.
                 </p>
 
                 <p>
-                    Com edições que já trouxeram <strong class="text-phpeste-title">nomes de destaque nacionais e internacionais</strong>, a PHPeste envolve uma comunidade vibrante e ativa em todo o Brasil. Hoje, A conferência alcança mais de <strong class="text-phpeste-title">7 mil pessoas diretamente</strong> em grupos de Telegram, Instagram, X (Twitter) e Facebook, além de impactar uma audiência tech estimada em mais de <strong class="text-phpeste-title">200 mil usuários</strong> nas redes sociais, um público altamente qualificado e conectado com o universo da tecnologia.
+                    Com edições que já trouxeram <strong class="text-phpeste-title">nomes de destaque nacionais e internacionais</strong>, a PHPeste envolve uma comunidade vibrante e ativa em todo o Brasil. Hoje, a conferência alcança mais de <strong class="text-phpeste-title">7 mil pessoas diretamente</strong> em grupos de Telegram, Instagram, X (Twitter) e Facebook, além de impactar uma audiência tech estimada em mais de <strong class="text-phpeste-title">200 mil usuários</strong> nas redes sociais, um público altamente qualificado e conectado com o universo da tecnologia.
                 </p>
+            </div>
+
+            <!-- Benefícios de Apoiar -->
+            <div class="mt-20 mb-16">
+                <h3 class="text-3xl font-bold text-phpeste-title text-center mb-12">
+                    Benefícios de Apoiar a PHPeste
+                </h3>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <!-- Benefício: Visibilidade Regional -->
+                    <div class="bg-phpeste-light rounded-lg p-6 hover:shadow-xl transition duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-phpeste-title rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                            </div>
+                            <h4 class="text-xl font-bold text-phpeste-title">Visibilidade Regional</h4>
+                        </div>
+                        <p class="text-phpeste-text">
+                            Presença em 7 estados do Nordeste, atingindo desenvolvedores de toda a região.
+                        </p>
+                    </div>
+
+                    <!-- Benefício: Público Qualificado -->
+                    <div class="bg-phpeste-light rounded-lg p-6 hover:shadow-xl transition duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-phpeste-title rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
+                                </svg>
+                            </div>
+                            <h4 class="text-xl font-bold text-phpeste-title">Público Qualificado</h4>
+                        </div>
+                        <p class="text-phpeste-text">
+                            Desenvolvedores, arquitetos de software, gestores de TI e entusiastas de tecnologia.
+                        </p>
+                    </div>
+
+                    <!-- Benefício: Networking -->
+                    <div class="bg-phpeste-light rounded-lg p-6 hover:shadow-xl transition duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-phpeste-title rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                                </svg>
+                            </div>
+                            <h4 class="text-xl font-bold text-phpeste-title">Networking</h4>
+                        </div>
+                        <p class="text-phpeste-text">
+                            Conexão direta com talentos tech nordestinos e líderes de comunidades.
+                        </p>
+                    </div>
+
+                    <!-- Benefício: Branding -->
+                    <div class="bg-phpeste-light rounded-lg p-6 hover:shadow-xl transition duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-phpeste-title rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                </svg>
+                            </div>
+                            <h4 class="text-xl font-bold text-phpeste-title">Responsabilidade Social</h4>
+                        </div>
+                        <p class="text-phpeste-text">
+                            Associe sua marca à inclusão, desenvolvimento regional e valorização da diversidade.
+                        </p>
+                    </div>
+
+                    <!-- Benefício: Recrutamento -->
+                    <div class="bg-phpeste-light rounded-lg p-6 hover:shadow-xl transition duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-phpeste-title rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+                            <h4 class="text-xl font-bold text-phpeste-title">Recrutamento</h4>
+                        </div>
+                        <p class="text-phpeste-text">
+                            Acesso direto a profissionais qualificados em busca de oportunidades.
+                        </p>
+                    </div>
+
+                    <!-- Benefício: Alcance Digital -->
+                    <div class="bg-phpeste-light rounded-lg p-6 hover:shadow-xl transition duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-phpeste-title rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+                            <h4 class="text-xl font-bold text-phpeste-title">Alcance Digital</h4>
+                        </div>
+                        <p class="text-phpeste-text">
+                            Divulgação em redes sociais com alcance de +200 mil profissionais de tecnologia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Actions -->
+            <div class="mt-16 mb-20 text-center bg-phpeste-light rounded-2xl p-12 max-w-4xl mx-auto">
+                <h3 class="text-3xl font-bold text-phpeste-title mb-6">
+                    Quer Apoiar a PHPeste?
+                </h3>
+                <p class="text-xl text-phpeste-text mb-8 max-w-2xl mx-auto">
+                    Entre em contato para conhecer nossos planos de patrocínio e fazer parte dessa história de transformação tecnológica no Nordeste.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#contato-patrocinio" class="inline-block bg-phpeste-title text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-phpeste-dark transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                        Quero Ser um Apoiador
+                    </a>
+                    <a href="https://t.me/phpeste" target="_blank" rel="noopener noreferrer" class="inline-block bg-white text-phpeste-title border-2 border-phpeste-title px-8 py-4 rounded-lg text-lg font-semibold hover:bg-phpeste-bg transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                        Falar no Telegram
+                    </a>
+                </div>
             </div>
 
             <!-- Gráfico de Público ao Longo dos Anos -->
@@ -508,6 +778,410 @@
         </div>
     </section>
 
+    <!-- Seção Contato para Patrocínio -->
+    <section id="contato-patrocinio" class="py-20 bg-phpeste-light" aria-labelledby="contato-patrocinio-heading">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 id="contato-patrocinio-heading" class="text-4xl sm:text-5xl font-bold text-phpeste-title mb-4">
+                    Faça Parte da PHPeste
+                </h2>
+                <div class="w-24 h-1 bg-phpeste-title mx-auto mb-6"></div>
+                <p class="text-xl text-phpeste-text max-w-3xl mx-auto">
+                    Junte-se às empresas que apoiam o desenvolvimento tecnológico do Nordeste
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                <!-- Lado Esquerdo: Informações -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold text-phpeste-title mb-6">Entre em Contato</h3>
+                    <p class="text-phpeste-text mb-8 leading-relaxed">
+                        Estamos sempre abertos a novas parcerias que compartilhem nossa visão de democratizar o acesso à tecnologia e fortalecer o ecossistema de desenvolvimento no Nordeste.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-phpeste-light rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-phpeste-title" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-phpeste-title mb-1">Email</h4>
+                                <a href="mailto:contato@phpeste.org" class="text-phpeste-text hover:text-phpeste-title transition duration-300">
+                                    contato@phpeste.org
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-phpeste-light rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-phpeste-title" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-phpeste-title mb-1">Telegram</h4>
+                                <a href="https://t.me/phpeste" target="_blank" rel="noopener noreferrer" class="text-phpeste-text hover:text-phpeste-title transition duration-300">
+                                    @phpeste
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-phpeste-light rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-phpeste-title" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-phpeste-title mb-1">Redes Sociais</h4>
+                                <div class="flex gap-3 mt-2">
+                                    <a href="https://instagram.com/phpeste" target="_blank" rel="noopener noreferrer" class="text-phpeste-text hover:text-phpeste-title transition duration-300">
+                                        Instagram
+                                    </a>
+                                    <span class="text-phpeste-text">•</span>
+                                    <a href="https://x.com/phpeste" target="_blank" rel="noopener noreferrer" class="text-phpeste-text hover:text-phpeste-title transition duration-300">
+                                        X (Twitter)
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 pt-8 border-t border-phpeste-light">
+                        <h4 class="font-semibold text-phpeste-title mb-4">Planos de Patrocínio</h4>
+                        <p class="text-phpeste-text mb-4">
+                            Oferecemos diferentes níveis de patrocínio para atender às necessidades de cada empresa:
+                        </p>
+                        <ul class="space-y-2 text-phpeste-text">
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-phpeste-title flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Patrocínio Diamante
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-phpeste-title flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Patrocínio Ouro
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-phpeste-title flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Patrocínio Prata
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-phpeste-title flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Apoio Específico (Coffee break, Credenciamento, etc.)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Lado Direito: Por que entrar em contato -->
+                <div class="space-y-6">
+                    <div class="bg-white rounded-2xl p-8 shadow-lg">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-12 h-12 bg-phpeste-title rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-phpeste-title">Próxima Edição</h3>
+                        </div>
+                        <p class="text-phpeste-text mb-2">
+                            <strong>PHPeste 2026 - São Luís, MA</strong>
+                        </p>
+                        <p class="text-sm text-gray-600">
+                            Previsão: Outubro de 2026
+                        </p>
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-8 shadow-lg">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-12 h-12 bg-phpeste-title rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-phpeste-title">Por que patrocinar agora?</h3>
+                        </div>
+                        <ul class="space-y-3 text-phpeste-text">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-phpeste-title flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Garanta as melhores cotas de patrocínio
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-phpeste-title flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Maior tempo de divulgação da sua marca
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-phpeste-title flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Acesso prioritário para ações customizadas
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-phpeste-title flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Participe do planejamento da edição
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-phpeste-title rounded-2xl p-8 shadow-lg text-white">
+                        <h3 class="text-2xl font-bold mb-4">Estatísticas que Importam</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="text-3xl font-bold">+2.000</div>
+                                <div class="text-phpeste-light">Participantes históricos</div>
+                            </div>
+                            <div>
+                                <div class="text-3xl font-bold">+200k</div>
+                                <div class="text-phpeste-light">Alcance nas redes sociais</div>
+                            </div>
+                            <div>
+                                <div class="text-3xl font-bold">10 anos</div>
+                                <div class="text-phpeste-light">De história e tradição</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção FAQ para Patrocinadores -->
+    <section id="faq-patrocinadores" class="py-20 bg-white" aria-labelledby="faq-heading">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 id="faq-heading" class="text-4xl sm:text-5xl font-bold text-phpeste-title mb-4">
+                    Perguntas Frequentes
+                </h2>
+                <div class="w-24 h-1 bg-phpeste-title mx-auto mb-6"></div>
+                <p class="text-xl text-phpeste-text">
+                    Tudo o que você precisa saber sobre patrocínio da PHPeste
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <details class="bg-phpeste-light rounded-lg overflow-hidden group">
+                    <summary class="cursor-pointer p-6 flex justify-between items-center hover:bg-phpeste-bg transition duration-300">
+                        <h3 class="text-lg font-semibold text-phpeste-title pr-8">
+                            Como funciona o patrocínio da PHPeste?
+                        </h3>
+                        <svg class="w-6 h-6 text-phpeste-title transform transition-transform group-open:rotate-180 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-phpeste-text leading-relaxed">
+                        <p>
+                            Cada edição da PHPeste é organizada pela comunidade local do estado sede. O patrocínio é direcionado para a edição específica do ano e os valores são geridos de forma transparente pela comunidade organizadora. Oferecemos diferentes níveis de patrocínio (Diamante, Ouro, Prata) e apoios específicos para coffee break, credenciamento, brindes e outras ações personalizadas.
+                        </p>
+                    </div>
+                </details>
+
+                <!-- FAQ 2 -->
+                <details class="bg-phpeste-light rounded-lg overflow-hidden group">
+                    <summary class="cursor-pointer p-6 flex justify-between items-center hover:bg-phpeste-bg transition duration-300">
+                        <h3 class="text-lg font-semibold text-phpeste-title pr-8">
+                            Quais são as categorias de patrocínio disponíveis?
+                        </h3>
+                        <svg class="w-6 h-6 text-phpeste-title transform transition-transform group-open:rotate-180 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-phpeste-text leading-relaxed">
+                        <p class="mb-4">
+                            Os planos variam por edição, mas geralmente incluem:
+                        </p>
+                        <ul class="space-y-2">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-phpeste-title flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <strong>Patrocínio Diamante:</strong> Máxima visibilidade, logo em destaque, vagas para participantes, stand exclusivo
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-phpeste-title flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <strong>Patrocínio Ouro:</strong> Alta visibilidade, logo em materiais, vagas para participantes
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-phpeste-title flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <strong>Patrocínio Prata:</strong> Visibilidade em materiais e redes sociais
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-phpeste-title flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <strong>Apoios Específicos:</strong> Coffee break, credenciamento, brindes, hospedagem de palestrantes, entre outros
+                            </li>
+                        </ul>
+                    </div>
+                </details>
+
+                <!-- FAQ 3 -->
+                <details class="bg-phpeste-light rounded-lg overflow-hidden group">
+                    <summary class="cursor-pointer p-6 flex justify-between items-center hover:bg-phpeste-bg transition duration-300">
+                        <h3 class="text-lg font-semibold text-phpeste-title pr-8">
+                            O patrocínio é válido para uma edição ou para todo o evento?
+                        </h3>
+                        <svg class="w-6 h-6 text-phpeste-title transform transition-transform group-open:rotate-180 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-phpeste-text leading-relaxed">
+                        <p>
+                            O patrocínio é direcionado para a edição específica do ano. Como a PHPeste é itinerante e cada edição é organizada pela comunidade local do estado sede, os acordos de patrocínio são feitos individualmente para cada edição. Empresas que desejam apoiar múltiplas edições são muito bem-vindas e podem entrar em contato para discutir parcerias de longo prazo.
+                        </p>
+                    </div>
+                </details>
+
+                <!-- FAQ 4 -->
+                <details class="bg-phpeste-light rounded-lg overflow-hidden group">
+                    <summary class="cursor-pointer p-6 flex justify-between items-center hover:bg-phpeste-bg transition duration-300">
+                        <h3 class="text-lg font-semibold text-phpeste-title pr-8">
+                            Como entro em contato para patrocinar?
+                        </h3>
+                        <svg class="w-6 h-6 text-phpeste-title transform transition-transform group-open:rotate-180 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-phpeste-text leading-relaxed">
+                        <p class="mb-4">
+                            Você pode entrar em contato conosco através dos seguintes canais:
+                        </p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-phpeste-title flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                                Email: <a href="mailto:contato@phpeste.org" class="text-phpeste-title hover:underline">contato@phpeste.org</a>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-phpeste-title flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                                </svg>
+                                Telegram: <a href="https://t.me/phpeste" target="_blank" rel="noopener noreferrer" class="text-phpeste-title hover:underline">@phpeste</a>
+                            </li>
+                        </ul>
+                        <p class="mt-4">
+                            Nossa equipe responderá em até 48 horas com todas as informações sobre os planos de patrocínio disponíveis.
+                        </p>
+                    </div>
+                </details>
+
+                <!-- FAQ 5 -->
+                <details class="bg-phpeste-light rounded-lg overflow-hidden group">
+                    <summary class="cursor-pointer p-6 flex justify-between items-center hover:bg-phpeste-bg transition duration-300">
+                        <h3 class="text-lg font-semibold text-phpeste-title pr-8">
+                            Posso patrocinar apenas uma parte específica do evento?
+                        </h3>
+                        <svg class="w-6 h-6 text-phpeste-title transform transition-transform group-open:rotate-180 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-phpeste-text leading-relaxed">
+                        <p>
+                            Sim! Além dos planos de patrocínio tradicionais, oferecemos apoios específicos para diferentes momentos do evento, como coffee break, credenciamento, brindes, hospedagem de palestrantes, impressão de camisetas, entre outros. Essa é uma excelente opção para empresas que desejam apoiar a conferência de forma mais direcionada.
+                        </p>
+                    </div>
+                </details>
+
+                <!-- FAQ 6 -->
+                <details class="bg-phpeste-light rounded-lg overflow-hidden group">
+                    <summary class="cursor-pointer p-6 flex justify-between items-center hover:bg-phpeste-bg transition duration-300">
+                        <h3 class="text-lg font-semibold text-phpeste-title pr-8">
+                            Qual o retorno de investimento esperado ao patrocinar a PHPeste?
+                        </h3>
+                        <svg class="w-6 h-6 text-phpeste-title transform transition-transform group-open:rotate-180 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-phpeste-text leading-relaxed">
+                        <p class="mb-4">
+                            O retorno vai além do financeiro e inclui:
+                        </p>
+                        <ul class="space-y-2">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-phpeste-title flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <strong>Visibilidade:</strong> Exposição da marca para +200 mil pessoas nas redes sociais e centenas de participantes presenciais
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-phpeste-title flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <strong>Recrutamento:</strong> Acesso direto a talentos qualificados em PHP e tecnologias relacionadas
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-phpeste-title flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <strong>Branding:</strong> Associação da marca com inclusão, diversidade e responsabilidade social
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-phpeste-title flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <strong>Networking:</strong> Conexão com líderes de comunidades tech de todo o Nordeste
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-phpeste-title flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <strong>Impacto Social:</strong> Contribuição real para o desenvolvimento tecnológico da região
+                            </li>
+                        </ul>
+                    </div>
+                </details>
+
+                <!-- FAQ 7 -->
+                <details class="bg-phpeste-light rounded-lg overflow-hidden group">
+                    <summary class="cursor-pointer p-6 flex justify-between items-center hover:bg-phpeste-bg transition duration-300">
+                        <h3 class="text-lg font-semibold text-phpeste-title pr-8">
+                            A PHPeste emite nota fiscal?
+                        </h3>
+                        <svg class="w-6 h-6 text-phpeste-title transform transition-transform group-open:rotate-180 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-phpeste-text leading-relaxed">
+                        <p>
+                            Cada edição da PHPeste é organizada pela comunidade local, que pode ter diferentes estruturas jurídicas (associações, MEIs, empresas parceiras). As questões de formalização e emissão de nota fiscal são tratadas diretamente com a organização da edição específica. Entre em contato conosco para discutir as melhores opções para sua empresa.
+                        </p>
+                    </div>
+                </details>
+            </div>
+
+            <!-- CTA após FAQ -->
+            <div class="mt-16 text-center bg-phpeste-bg rounded-2xl p-8">
+                <p class="text-lg text-phpeste-text mb-6">
+                    Não encontrou a resposta que procurava?
+                </p>
+                <a href="#contato-patrocinio" class="inline-block bg-phpeste-title text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-phpeste-dark transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                    Fale Conosco
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Seção Timeline de Edições -->
     <section id="edicoes" class="py-20 bg-phpeste-bg" aria-labelledby="edicoes-heading">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -565,7 +1239,7 @@
                                 </div>
                                 <div class="p-6">
                                     <p class="text-phpeste-text">
-                                        A segunda edição chegou à Bahia, expandindo o alcance dA conferência e fortalecendo a comunidade PHP no Nordeste.
+                                        A segunda edição chegou à Bahia, expandindo o alcance da conferência e fortalecendo a comunidade PHP no Nordeste.
                                     </p>
                                 </div>
                             </div>
@@ -676,7 +1350,7 @@
                                 </div>
                                 <div class="p-6">
                                     <p class="text-phpeste-text">
-                                        Fortaleza recebeu novamente a PHPeste, batendo o recorde de participantes e consolidando A conferência como o maior do Nordeste.
+                                        Fortaleza recebeu novamente a PHPeste, batendo o recorde de participantes e consolidando a conferência como a maior do Nordeste.
                                     </p>
                                 </div>
                             </div>
@@ -703,7 +1377,7 @@
                                 </div>
                                 <div class="p-6">
                                     <p class="text-phpeste-text">
-                                        Recife voltou a sediar A conferência com grande sucesso, mostrando a força da comunidade pernambucana.
+                                        Recife voltou a sediar a conferência com grande sucesso, mostrando a força da comunidade pernambucana.
                                     </p>
                                 </div>
                             </div>
@@ -780,7 +1454,7 @@
                     <h3 class="text-2xl font-bold text-phpeste-title mb-4">Art. 1º — Da natureza da conferência</h3>
                     <ol class="space-y-3 text-phpeste-text list-decimal list-inside">
                         <li class="leading-relaxed">A PHPeste é uma conferência anual, comunitária, independente e itinerante, dedicado à promoção do ecossistema PHP no Nordeste brasileiro, com foco na inclusão, regionalidade e profissionalização de pessoas desenvolvedoras da região.</li>
-                        <li class="leading-relaxed">A conferência não possui fins lucrativos, e todos os valores devem ser retornados a conferência, caso aconteça de ter saldo positivo, esse valor é passado para o ano seguinte.</li>
+                        <li class="leading-relaxed">A conferência não possui fins lucrativos, e todos os valores devem ser retornados à conferência, caso aconteça de ter saldo positivo, esse valor é passado para o ano seguinte.
                     </ol>
                 </div>
 
@@ -801,9 +1475,9 @@
                     <ol class="space-y-3 text-phpeste-text list-decimal list-inside">
                         <li class="leading-relaxed">A realização da PHPeste em um estado está <strong class="text-phpeste-title">condicionada à existência de uma comunidade PHP ativa</strong> no estado, promovendo ações como meetups, eventos, grupos como PHPinga, etc.</li>
                         <li class="leading-relaxed">
-                            A <strong class="text-phpeste-title">comunidade local será a responsável pela organização dA conferência</strong> naquele ano.
+                            A <strong class="text-phpeste-title">comunidade local será a responsável pela organização da conferência</strong> naquele ano.
                             <ul class="ml-6 mt-2">
-                                <li class="list-disc">Exemplo: quando A conferência ocorrer no Ceará, a comunidade <strong class="text-phpeste-title">PHP com Rapadura</strong> será a responsável.</li>
+                                <li class="list-disc">Exemplo: quando a conferência ocorrer no Ceará, a comunidade <strong class="text-phpeste-title">PHP com Rapadura</strong> será a responsável.
                             </ul>
                         </li>
                     </ol>
@@ -846,7 +1520,7 @@
                     <h3 class="text-2xl font-bold text-phpeste-title mb-4">Art. 6º — Da seleção de palestrantes</h3>
                     <ol class="space-y-3 text-phpeste-text list-decimal list-inside">
                         <li class="leading-relaxed">Pelo menos <strong class="text-phpeste-title">50% das pessoas palestrantes devem ser naturais ou residentes no Nordeste</strong>.</li>
-                        <li class="leading-relaxed">Dentre essas, <strong class="text-phpeste-title">pelo menos 50% devem ser do estado sede dA conferência</strong>.</li>
+                        <li class="leading-relaxed">Dentre essas, <strong class="text-phpeste-title">pelo menos 50% devem ser do estado sede da conferência</strong>.</li>
                         <li class="leading-relaxed">A conferência deve garantir a presença de <strong class="text-phpeste-title">pelo menos um(a) palestrante de cada estado nordestino</strong>.</li>
                         <li class="leading-relaxed">
                             O processo de seleção será feito por meio de:
@@ -881,7 +1555,7 @@
                             A organização <strong class="text-phpeste-title">não é obrigada a arcar com passagens e hospedagens</strong>, mas recomenda-se oferecer um <strong class="text-phpeste-title">"kit palestrante"</strong> com:
                             <ul class="ml-6 mt-2 space-y-1">
                                 <li class="list-disc">Hospedagem (quando possível);</li>
-                                <li class="list-disc">Jantar no dia anterior aA conferência;</li>
+                                <li class="list-disc">Jantar no dia anterior a conferência;</li>
                                 <li class="list-disc">Transporte local;</li>
                                 <li class="list-disc">Café da manhã e outras gentilezas.</li>
                             </ul>
@@ -1001,6 +1675,7 @@
                     <h4 class="text-xl font-semibold text-phpeste-bg mb-4">Links Rápidos</h4>
                     <ul class="space-y-2">
                         <li><a href="#sobre" class="text-phpeste-light hover:text-phpeste-bg transition duration-300">Sobre</a></li>
+                        <li><a href="#impacto" class="text-phpeste-light hover:text-phpeste-bg transition duration-300">Impacto</a></li>
                         <li><a href="#comunidades" class="text-phpeste-light hover:text-phpeste-bg transition duration-300">Comunidades</a></li>
                         <li><a href="#porque-apoiar" class="text-phpeste-light hover:text-phpeste-bg transition duration-300">Por que apoiar?</a></li>
                         <li><a href="#edicoes" class="text-phpeste-light hover:text-phpeste-bg transition duration-300">Edições</a></li>
