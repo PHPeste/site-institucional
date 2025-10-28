@@ -13,6 +13,7 @@
     "communities": "Communities",
     "support": "Why Support?",
     "editions": "Editions",
+    "gallery": "Gallery",
     "statute": "Statute"
   },
   "hero": {
@@ -192,6 +193,15 @@
       "description": "The next edition is already confirmed! São Luís in Maranhão will once again host PHPeste, promising more learning, networking, and strengthening of the Northeastern tech community.",
       "stayTuned": "Stay tuned for more news!"
     }
+  },
+  "gallery": {
+    "heading": "Photo Gallery",
+    "subtitle": "Memorable moments from PHPeste editions",
+    "edition2015": "2015 - João Pessoa, PB",
+    "edition2016": "2016 - Salvador, BA",
+    "edition2017": "2017 - Fortaleza, CE",
+    "viewImage": "View image",
+    "closeModal": "Close"
   },
   "statute": {
     "heading": "Statute",

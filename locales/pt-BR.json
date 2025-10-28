@@ -13,6 +13,7 @@
     "communities": "Comunidades",
     "support": "Por que apoiar?",
     "editions": "Edições",
+    "gallery": "Galeria",
     "statute": "Estatuto"
   },
   "hero": {
@@ -192,6 +193,15 @@
       "description": "A próxima edição já está confirmada! São Luís do Maranhão receberá novamente a PHPeste, prometendo mais aprendizado, networking e fortalecimento da comunidade tech nordestina.",
       "stayTuned": "Fique ligado para mais novidades!"
     }
+  },
+  "gallery": {
+    "heading": "Galeria de Fotos",
+    "subtitle": "Momentos marcantes das edições da PHPeste",
+    "edition2015": "2015 - João Pessoa, PB",
+    "edition2016": "2016 - Salvador, BA",
+    "edition2017": "2017 - Fortaleza, CE",
+    "viewImage": "Ver imagem",
+    "closeModal": "Fechar"
   },
   "statute": {
     "heading": "Estatuto",
