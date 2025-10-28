@@ -20,17 +20,17 @@
     "logoAlt": "PHPeste - The largest PHP conference in Northeast Brazil",
     "since": "Since 2015",
     "subtitle": "The largest PHP communities conference in Northeast Brazil",
-    "description": "Connecting developers, sharing knowledge and celebrating the Northeastern PHP community",
+    "description": "Connecting developers, sharing knowledge, and celebrating the Northeastern PHP community",
     "cta": "Learn more",
     "ctaAriaLabel": "Learn more about PHPeste"
   },
   "about": {
     "heading": "About the Conference",
-    "paragraph1": "PHPeste is an <strong>amazing technology and development gathering</strong> that brings together the \"awesome\" communities from all over the Northeast!",
-    "paragraph2": "Before PHPeste, most major tech events took place in the South and Southeast of the country, which left many people here without access to this type of experience. That's where the idea came from to create a traveling conference, to bring technology, knowledge, and opportunity closer to the Northeastern people, strengthening our local communities.",
-    "paragraph3": "Since then, the PHPeste conference has traveled through many great places — <strong>João Pessoa (PB), Salvador (BA), Fortaleza (CE), São Luís (MA), Recife (PE), Natal (RN), and Parnaíba (PI)</strong> — spreading learning, practice, and lots of networking among professionals, students, and technology enthusiasts.",
-    "paragraph4": "It's <strong>three days of pure immersion</strong>, filled with inspiring talks, hands-on workshops, and activities to exchange ideas and make friends with \"awesome people\" who come from all over to share experiences and strengthen our community.",
-    "paragraph5": "The PHPeste conference is organized <strong>collaboratively and as a non-profit</strong>, organized by volunteers from the nine Northeastern states — Alagoas, Bahia, Ceará, Maranhão, Paraíba, Pernambuco, Piauí, Rio Grande do Norte, and Sergipe. All of this to reduce costs, lower ticket prices, and ensure that more people can participate, learn, and grow together.",
+    "paragraph1": "PHPeste is an <strong>amazing technology and development gathering</strong> that brings together the PHP communities from all over the Northeast!",
+    "paragraph2": "Before PHPeste, most major tech events took place in the South and Southeast of the country, which left many people here without access to this type of experience. That's how the idea originated to create a traveling conference, to bring technology, knowledge, and opportunity closer to the Northeastern people, strengthening our local communities.",
+    "paragraph3": "Since then, the PHPeste conference has traveled to many great places — <strong>João Pessoa (PB), Salvador (BA), Fortaleza (CE), São Luís (MA), Recife (PE), Natal (RN), and Parnaíba (PI)</strong> — spreading learning, practice, and lots of networking among professionals, students, and technology enthusiasts.",
+    "paragraph4": "The event consists of <strong>three days of pure immersion</strong>, filled with inspiring talks, hands-on workshops, and activities to exchange ideas and make friends with outstanding people who come from all over to share experiences and strengthen our community.",
+    "paragraph5": "The PHPeste conference is organized <strong>collaboratively and as a non-profit</strong>, organized by volunteers from the nine Northeastern states — Alagoas, Bahia, Ceará, Maranhão, Paraíba, Pernambuco, Piauí, Rio Grande do Norte, and Sergipe. This is all done to reduce costs, lower ticket prices, and ensure that more people can participate, learn, and grow together.",
     "paragraph6": "Here, there's no shortage of passion, friendship, and the desire to make the Northeast shine even brighter in the tech scene!"
   },
   "impact": {
