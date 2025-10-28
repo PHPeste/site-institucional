@@ -1,0 +1,290 @@
+{
+  "meta": {
+    "title": "PHPeste - A Maior Conferência de PHP do Nordeste Brasileiro",
+    "description": "Evento anual, comunitário e itinerante que reúne desenvolvedores PHP de todo o Nordeste. Promovendo inclusão, tecnologia e valorização da cultura nordestina desde 2015.",
+    "keywords": "PHPeste, PHP, Nordeste, Conferência, Tecnologia, Desenvolvimento, Programação, PHP Nordeste, Evento Tech, Comunidade PHP, PHP Brasil",
+    "language": "Portuguese",
+    "ogLocale": "pt_BR",
+    "inLanguage": "pt-BR"
+  },
+  "nav": {
+    "about": "Sobre",
+    "impact": "Impacto",
+    "communities": "Comunidades",
+    "support": "Por que apoiar?",
+    "editions": "Edições",
+    "statute": "Estatuto"
+  },
+  "hero": {
+    "logoAlt": "PHPeste - A maior conferência de PHP do Nordeste",
+    "since": "Desde 2015",
+    "subtitle": "A maior conferência de comunidades PHP do Nordeste Brasileiro",
+    "description": "Conectando desenvolvedores, compartilhando conhecimento e celebrando a comunidade PHP nordestina",
+    "cta": "Saiba mais",
+    "ctaAriaLabel": "Saiba mais sobre a PHPeste"
+  },
+  "about": {
+    "heading": "Sobre a Conferência",
+    "paragraph1": "A PHPeste é um <strong>arretado encontro de tecnologia e desenvolvimento</strong> que reúne as comunidades \"cabra da peste\" de todo o Nordeste!",
+    "paragraph2": "Antes da PHPeste, a maioria dos grandes eventos de tecnologia acontecia lá pelo Sul e Sudeste do país, o que deixava muita gente daqui sem acesso a esse tipo de vivência. Foi daí que surgiu a ideia de fazer uma conferência itinerante, pra levar tecnologia, conhecimento e oportunidade pra perto do povo nordestino, fortalecendo nossas comunidades locais.",
+    "paragraph3": "Desde então, a PHPeste conferência já passou por um bocado de canto bom — <strong>João Pessoa (PB), Salvador (BA), Fortaleza (CE), São Luís (MA), Recife (PE), Natal (RN) e Parnaíba (PI)</strong> — espalhando aprendizado, prática e muito networking entre profissionais, estudantes e entusiastas da tecnologia.",
+    "paragraph4": "São <strong>três dias de pura imersão</strong>, cheios de palestras que inspiram, minicursos de botar a mão na massa e atividades pra trocar ideia e fazer amizade com gente \"arretada da peste\", que vem de todo canto pra compartilhar experiências e fortalecer nossa comunidade.",
+    "paragraph5": "A PHPeste conferência é feita de forma <strong>colaborativa e sem fins lucrativos</strong>, organizada por voluntários dos nove estados nordestinos — Alagoas, Bahia, Ceará, Maranhão, Paraíba, Pernambuco, Piauí, Rio Grande do Norte e Sergipe. Tudo isso pra diminuir os custos, baratear os ingressos e garantir que mais gente possa participar, aprender e crescer junto.",
+    "paragraph6": "Aqui, o que não falta é paixão, amizade e vontade de fazer o Nordeste brilhar ainda mais no cenário da tecnologia!"
+  },
+  "impact": {
+    "heading": "Nosso Impacto",
+    "subtitle": "Uma década conectando desenvolvedores e fortalecendo o ecossistema PHP do Nordeste",
+    "participants": "Participantes",
+    "participantsDetail": "Ao longo de 9 edições",
+    "editions": "Edições Realizadas",
+    "editionsDetail": "De 2015 a 2025",
+    "states": "Estados Nordestinos",
+    "statesDetail": "PB, BA, CE, MA, PE, RN, PI",
+    "reach": "Alcance nas Redes",
+    "reachDetail": "Audiência tech estimada",
+    "years": "Anos de História",
+    "yearsDetail": "2015 - 2025",
+    "communities": "Comunidades Parceiras",
+    "communitiesDetail": "De todo o Brasil",
+    "days": "Dias de Imersão",
+    "daysDetail": "Por edição",
+    "nonprofit": "Sem Fins Lucrativos",
+    "nonprofitDetail": "Organização voluntária"
+  },
+  "communities": {
+    "heading": "Comunidades Parceiras"
+  },
+  "support": {
+    "heading": "Por que apoiar?",
+    "paragraph1": "A PHPeste conferência reúne um <strong>público diverso e engajado</strong>, formado por pessoas desenvolvedoras, arquitetas, engenheiras de software, gerentes de TI, entusiastas e empresárias de todo o Nordeste.",
+    "paragraph2": "Apoiar a PHPeste é <strong>associar sua marca a uma iniciativa colaborativa</strong>, que promove aprendizado, inovação e o desenvolvimento tecnológico do país. Além de ampla visibilidade, a conferência oferece uma excelente oportunidade para capacitar equipes, apresentar soluções, recrutar talentos e estabelecer novas parcerias de negócio.",
+    "paragraph3": "Com edições que já trouxeram <strong>nomes de destaque nacionais e internacionais</strong>, a PHPeste envolve uma comunidade vibrante e ativa em todo o Brasil. Hoje, a conferência alcança mais de <strong>7 mil pessoas diretamente</strong> em grupos de Telegram, Instagram, X (Twitter) e Facebook, além de impactar uma audiência tech estimada em mais de <strong>200 mil usuários</strong> nas redes sociais, um público altamente qualificado e conectado com o universo da tecnologia.",
+    "benefitsHeading": "Benefícios de Apoiar a PHPeste",
+    "benefitVisibility": "Visibilidade Regional",
+    "benefitVisibilityDesc": "Presença em 7 estados do Nordeste, atingindo desenvolvedores de toda a região.",
+    "benefitAudience": "Público Qualificado",
+    "benefitAudienceDesc": "Desenvolvedores, arquitetos de software, gestores de TI e entusiastas de tecnologia.",
+    "benefitNetworking": "Networking",
+    "benefitNetworkingDesc": "Conexão direta com talentos tech nordestinos e líderes de comunidades.",
+    "benefitSocial": "Responsabilidade Social",
+    "benefitSocialDesc": "Associe sua marca à inclusão, desenvolvimento regional e valorização da diversidade.",
+    "benefitRecruitment": "Recrutamento",
+    "benefitRecruitmentDesc": "Acesso direto a profissionais qualificados em busca de oportunidades.",
+    "benefitDigitalReach": "Alcance Digital",
+    "benefitDigitalReachDesc": "Divulgação em redes sociais com alcance de +200 mil profissionais de tecnologia.",
+    "ctaHeading": "Quer Apoiar a PHPeste?",
+    "ctaDescription": "Entre em contato para conhecer nossos planos de patrocínio e fazer parte dessa história de transformação tecnológica no Nordeste.",
+    "ctaButton": "Quero Ser um Apoiador",
+    "ctaTelegram": "Falar no Telegram",
+    "audienceChartHeading": "Público ao Longo dos Anos",
+    "audienceChartLabel": "Número de inscritos por edição"
+  },
+  "contact": {
+    "heading": "Faça Parte da PHPeste",
+    "subtitle": "Junte-se às empresas que apoiam o desenvolvimento tecnológico do Nordeste",
+    "leftHeading": "Entre em Contato",
+    "leftDescription": "Estamos sempre abertos a novas parcerias que compartilhem nossa visão de democratizar o acesso à tecnologia e fortalecer o ecossistema de desenvolvimento no Nordeste.",
+    "email": "Email",
+    "telegram": "Telegram",
+    "socialMedia": "Redes Sociais",
+    "sponsorshipPlans": "Planos de Patrocínio",
+    "sponsorshipDescription": "Oferecemos diferentes níveis de patrocínio para atender às necessidades de cada empresa:",
+    "diamondSponsorship": "Patrocínio Diamante",
+    "goldSponsorship": "Patrocínio Ouro",
+    "silverSponsorship": "Patrocínio Prata",
+    "specificSupport": "Apoio Específico (Coffee break, Credenciamento, etc.)",
+    "nextEditionHeading": "Próxima Edição",
+    "nextEdition": "PHPeste 2026 - São Luís, MA",
+    "nextEditionDate": "Previsão: Outubro de 2026",
+    "whySponsorHeading": "Por que patrocinar agora?",
+    "whySponsor1": "Garanta as melhores cotas de patrocínio",
+    "whySponsor2": "Maior tempo de divulgação da sua marca",
+    "whySponsor3": "Acesso prioritário para ações customizadas",
+    "whySponsor4": "Participe do planejamento da edição",
+    "statsHeading": "Estatísticas que Importam",
+    "statsParticipants": "Participantes históricos",
+    "statsReach": "Alcance nas redes sociais",
+    "statsHistory": "De história e tradição"
+  },
+  "faq": {
+    "heading": "Perguntas Frequentes",
+    "subtitle": "Tudo o que você precisa saber sobre patrocínio da PHPeste",
+    "q1": "Como funciona o patrocínio da PHPeste?",
+    "a1": "Cada edição da PHPeste é organizada pela comunidade local do estado sede. O patrocínio é direcionado para a edição específica do ano e os valores são geridos de forma transparente pela comunidade organizadora. Oferecemos diferentes níveis de patrocínio (Diamante, Ouro, Prata) e apoios específicos para coffee break, credenciamento, brindes e outras ações personalizadas.",
+    "q2": "Quais são as categorias de patrocínio disponíveis?",
+    "a2Intro": "Os planos variam por edição, mas geralmente incluem:",
+    "a2Diamond": "<strong>Patrocínio Diamante:</strong> Máxima visibilidade, logo em destaque, vagas para participantes, stand exclusivo",
+    "a2Gold": "<strong>Patrocínio Ouro:</strong> Alta visibilidade, logo em materiais, vagas para participantes",
+    "a2Silver": "<strong>Patrocínio Prata:</strong> Visibilidade em materiais e redes sociais",
+    "a2Specific": "<strong>Apoios Específicos:</strong> Coffee break, credenciamento, brindes, hospedagem de palestrantes, entre outros",
+    "q3": "O patrocínio é válido para uma edição ou para todo o evento?",
+    "a3": "O patrocínio é direcionado para a edição específica do ano. Como a PHPeste é itinerante e cada edição é organizada pela comunidade local do estado sede, os acordos de patrocínio são feitos individualmente para cada edição. Empresas que desejam apoiar múltiplas edições são muito bem-vindas e podem entrar em contato para discutir parcerias de longo prazo.",
+    "q4": "Como entro em contato para patrocinar?",
+    "a4Intro": "Você pode entrar em contato conosco através dos seguintes canais:",
+    "a4Email": "Email: <a href=\"mailto:contato@phpeste.org\">contato@phpeste.org</a>",
+    "a4Telegram": "Telegram: <a href=\"https://t.me/phpeste\" target=\"_blank\" rel=\"noopener noreferrer\">@phpeste</a>",
+    "a4Footer": "Nossa equipe responderá em até 48 horas com todas as informações sobre os planos de patrocínio disponíveis.",
+    "q5": "Posso patrocinar apenas uma parte específica do evento?",
+    "a5": "Sim! Além dos planos de patrocínio tradicionais, oferecemos apoios específicos para diferentes momentos do evento, como coffee break, credenciamento, brindes, hospedagem de palestrantes, impressão de camisetas, entre outros. Essa é uma excelente opção para empresas que desejam apoiar a conferência de forma mais direcionada.",
+    "q6": "Qual o retorno de investimento esperado ao patrocinar a PHPeste?",
+    "a6Intro": "O retorno vai além do financeiro e inclui:",
+    "a6Visibility": "<strong>Visibilidade:</strong> Exposição da marca para +200 mil pessoas nas redes sociais e centenas de participantes presenciais",
+    "a6Recruitment": "<strong>Recrutamento:</strong> Acesso direto a talentos qualificados em PHP e tecnologias relacionadas",
+    "a6Branding": "<strong>Branding:</strong> Associação da marca com inclusão, diversidade e responsabilidade social",
+    "a6Networking": "<strong>Networking:</strong> Conexão com líderes de comunidades tech de todo o Nordeste",
+    "a6Impact": "<strong>Impacto Social:</strong> Contribuição real para o desenvolvimento tecnológico da região",
+    "q7": "A PHPeste emite nota fiscal?",
+    "a7": "Cada edição da PHPeste é organizada pela comunidade local, que pode ter diferentes estruturas jurídicas (associações, MEIs, empresas parceiras). As questões de formalização e emissão de nota fiscal são tratadas diretamente com a organização da edição específica. Entre em contato conosco para discutir as melhores opções para sua empresa.",
+    "ctaQuestion": "Não encontrou a resposta que procurava?",
+    "ctaButton": "Fale Conosco"
+  },
+  "editions": {
+    "heading": "Edições",
+    "e2015": {
+      "title": "2015 - João Pessoa, PB",
+      "participants": "193 participantes",
+      "description": "A primeira edição da PHPeste aconteceu em João Pessoa, marcando o início de uma jornada que levaria tecnologia e conhecimento por todo o Nordeste."
+    },
+    "e2016": {
+      "title": "2016 - Salvador, BA",
+      "participants": "211 participantes",
+      "description": "A segunda edição chegou à Bahia, expandindo o alcance da conferência e fortalecendo a comunidade PHP no Nordeste."
+    },
+    "e2017": {
+      "title": "2017 - Fortaleza, CE",
+      "participants": "296 participantes",
+      "description": "Fortaleza recebeu a conferência com grande entusiasmo, alcançando um número expressivo de participantes."
+    },
+    "e2018": {
+      "title": "2018 - São Luís, MA",
+      "participants": "205 participantes",
+      "description": "O Maranhão foi palco de mais uma edição memorável, levando conhecimento e networking para a comunidade local."
+    },
+    "e2019": {
+      "title": "2019 - Recife, PE",
+      "participants": "217 participantes",
+      "description": "Recife acolheu a comunidade PHP com toda a energia pernambucana, celebrando tecnologia e inovação."
+    },
+    "e2022": {
+      "title": "2022 - Natal, RN",
+      "participants": "146 participantes",
+      "description": "Após a pandemia, a PHPeste retornou em Natal, reencontrando a comunidade presencialmente com muita emoção."
+    },
+    "e2023": {
+      "title": "2023 - Fortaleza, CE",
+      "participants": "412 participantes",
+      "description": "Fortaleza recebeu novamente a PHPeste, batendo o recorde de participantes e consolidando a conferência como a maior do Nordeste."
+    },
+    "e2024": {
+      "title": "2024 - Recife, PE",
+      "participants": "325 participantes",
+      "description": "Recife voltou a sediar a conferência com grande sucesso, mostrando a força da comunidade pernambucana."
+    },
+    "e2025": {
+      "title": "2025 - Parnaíba, PI",
+      "participants": "123 participantes",
+      "description": "O Piauí foi palco dessa edição especial, levando a PHPeste para mais um estado nordestino e ampliando ainda mais nossa comunidade."
+    },
+    "e2026": {
+      "title": "2026 - São Luís, MA",
+      "comingSoon": "Em breve!",
+      "description": "A próxima edição já está confirmada! São Luís do Maranhão receberá novamente a PHPeste, prometendo mais aprendizado, networking e fortalecimento da comunidade tech nordestina.",
+      "stayTuned": "Fique ligado para mais novidades!"
+    }
+  },
+  "statute": {
+    "heading": "Estatuto",
+    "art1": {
+      "title": "Art. 1º — Da natureza da conferência",
+      "item1": "A PHPeste é uma conferência anual, comunitária, independente e itinerante, dedicado à promoção do ecossistema PHP no Nordeste brasileiro, com foco na inclusão, regionalidade e profissionalização de pessoas desenvolvedoras da região.",
+      "item2": "A conferência não possui fins lucrativos, e todos os valores devem ser retornados à conferência, caso aconteça de ter saldo positivo, esse valor é passado para o ano seguinte."
+    },
+    "art2": {
+      "title": "Art. 2º — Da periodicidade e localização",
+      "item1": "A conferência ocorrerá <strong>uma vez por ano</strong>.",
+      "item2": "A <strong>cidade-sede será sempre diferente</strong> a cada edição.",
+      "item3": "A conferência deve <strong>obrigatoriamente ocorrer em um estado diferente do Nordeste brasileiro</strong> a cada ano, promovendo alternância e valorização de todas as comunidades regionais.",
+      "item4": "A conferência deve acontecer por volta da data 08 de Outubro, que simboliza o dia do Nordestino."
+    },
+    "art3": {
+      "title": "Art. 3º — Da comunidade local",
+      "item1": "A realização da PHPeste em um estado está <strong>condicionada à existência de uma comunidade PHP ativa</strong> no estado, promovendo ações como meetups, eventos, grupos como PHPinga, etc.",
+      "item2intro": "A <strong>comunidade local será a responsável pela organização da conferência</strong> naquele ano.",
+      "item2example": "Exemplo: quando a conferência ocorrer no Ceará, a comunidade <strong>PHP com Rapadura</strong> será a responsável."
+    },
+    "art4": {
+      "title": "Art. 4º — Da identidade regional",
+      "item1": "A identidade visual da conferência deve <strong>refletir a cultura local</strong>, promovendo a <strong>regionalidade do estado, cidade e do Nordeste como um todo</strong>.",
+      "item2intro": "A regionalização deve estar presente em:",
+      "item2sub1": "Artes gráficas, camisetas, banners;",
+      "item2sub2": "Ações culturais (como bandas, comidas, decoração, etc.);",
+      "item2sub3": "Abertura e encerramento, quando possível."
+    },
+    "art5": {
+      "title": "Art. 5º — Da proposta e valores",
+      "item1intro": "A PHPeste tem como foco:",
+      "item1sub1": "<strong>Inclusão social e profissional</strong>;",
+      "item1sub2": "<strong>Valorização de talentos locais e regionais</strong>;",
+      "item1sub3": "<strong>Compartilhamento de conhecimento de ponta e histórias de superação</strong>.",
+      "item2": "O ingresso deverá ter <strong>valor acessível</strong>, de forma a garantir participação de públicos diversos."
+    },
+    "art6": {
+      "title": "Art. 6º — Da seleção de palestrantes",
+      "item1": "Pelo menos <strong>50% das pessoas palestrantes devem ser naturais ou residentes no Nordeste</strong>.",
+      "item2": "Dentre essas, <strong>pelo menos 50% devem ser do estado sede da conferência</strong>.",
+      "item3": "A conferência deve garantir a presença de <strong>pelo menos um(a) palestrante de cada estado nordestino</strong>.",
+      "item4intro": "O processo de seleção será feito por meio de:",
+      "item4sub1": "<strong>Call For Papers (CFP)</strong> público;",
+      "item4sub2": "<strong>Convites diretos</strong>, em casos especiais definidos pela organização.",
+      "item5": "Recomenda-se fortemente uma <strong>cota mínima de mulheres palestrantes</strong> e de grupos historicamente marginalizados (interior, LGBTQIAPN+, pessoas negras, indígenas etc.)."
+    },
+    "art7": {
+      "title": "Art. 7º — Da organização e custos",
+      "item1intro": "A organização fica <strong>integralmente sob responsabilidade da comunidade local</strong>, com liberdade para definir:",
+      "item1sub1": "Planos de patrocínio;",
+      "item1sub2": "Modelos de financiamento (inclusive crowdfunding).",
+      "item2intro": "A hospedagem dos palestrantes pode ser:",
+      "item2sub1": "Em <strong>uma única casa compartilhada</strong>, sempre que possível, promovendo networking;",
+      "item2sub2": "Em hospedagens individuais, a critério da organização.",
+      "item3intro": "A organização <strong>não é obrigada a arcar com passagens e hospedagens</strong>, mas recomenda-se oferecer um <strong>\"kit palestrante\"</strong> com:",
+      "item3sub1": "Hospedagem (quando possível);",
+      "item3sub2": "Jantar no dia anterior a conferência;",
+      "item3sub3": "Transporte local;",
+      "item3sub4": "Café da manhã e outras gentilezas."
+    },
+    "art8": {
+      "title": "Art. 8º — Da experiência na conferência",
+      "item1": "A conferência deve ser <strong>presencial</strong>, priorizando a interação e networking entre participantes.",
+      "item2intro": "Sugere-se que:",
+      "item2sub1": "Durante o <strong>coffee break ou credenciamento</strong>, haja música típica ao vivo ou gravada;",
+      "item2sub2": "O encerramento traga <strong>elementos culturais da cidade sede</strong>."
+    },
+    "art9": {
+      "title": "Art. 9º — Da transparência e legado",
+      "item1intro": "Recomenda-se que, após cada edição, a comunidade organizadora:",
+      "item1sub1": "Publique um <strong>relatório de transparência financeira resumido</strong>;",
+      "item1sub2": "Informe a cidade e estado da <strong>próxima edição da conferência</strong>, se já definida."
+    },
+    "art10": {
+      "title": "Art. 10º — Das Redes sociais",
+      "item1intro": "A comunidade conta com algumas redes que existem desde a primeira edição:",
+      "item1sub1": "Telegram <strong>principal canal de comunicação</strong>: <a href=\"https://t.me/phpeste\" target=\"_blank\" class=\"text-phpeste-title hover:underline\">https://t.me/phpeste</a>;",
+      "item1sub2": "Instagram <strong>usado para divulgação geral</strong>: <a href=\"https://instagram.com/phpeste\" target=\"_blank\" class=\"text-phpeste-title hover:underline\">https://instagram.com/phpeste</a>."
+    },
+    "art11": {
+      "title": "Art. 11º — Das disposições finais",
+      "item1": "Este estatuto pode ser atualizado por decisão coletiva das comunidades PHP do Nordeste, a partir da prática e necessidades que surgirem.",
+      "item2": "Os princípios de <strong>acolhimento, respeito à diversidade e valorização da cultura nordestina</strong> devem estar sempre acima das decisões logísticas ou técnicas."
+    }
+  },
+  "footer": {
+    "logoAlt": "PHPeste",
+    "description": "A maior conferência de comunidades PHP do Nordeste Brasileiro",
+    "socialMediaHeading": "Redes Sociais",
+    "quickLinksHeading": "Links Rápidos",
+    "copyright": "© 2015-2025 PHPeste. Todos os direitos reservados.",
+    "madeWith": "Feito com amor pela comunidade PHP do Nordeste",
+    "backToTop": "Voltar ao topo"
+  }
+}

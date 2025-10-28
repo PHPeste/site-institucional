@@ -60,4 +60,59 @@ document.addEventListener('DOMContentLoaded', function() {
             behavior: 'smooth'
         });
     });
+
+    // Language Toggle Buttons
+    const langToggle = document.getElementById('lang-toggle');
+    const langToggleMobile = document.getElementById('lang-toggle-mobile');
+
+    // Função para atualizar os botões de idioma
+    function updateLanguageButtons(locale) {
+        const flagIcon = document.getElementById('flag-icon');
+        const langCode = document.getElementById('lang-code');
+        const flagIconMobile = document.getElementById('flag-icon-mobile');
+        const langCodeMobile = document.getElementById('lang-code-mobile');
+
+        if (locale === 'pt-BR') {
+            if (flagIcon) flagIcon.textContent = '🇧🇷';
+            if (langCode) langCode.textContent = 'PT';
+            if (flagIconMobile) flagIconMobile.textContent = '🇧🇷';
+            if (langCodeMobile) langCodeMobile.textContent = 'PT';
+        } else if (locale === 'en-US') {
+            if (flagIcon) flagIcon.textContent = '🇺🇸';
+            if (langCode) langCode.textContent = 'EN';
+            if (flagIconMobile) flagIconMobile.textContent = '🇺🇸';
+            if (langCodeMobile) langCodeMobile.textContent = 'EN';
+        }
+    }
+
+    // Função para trocar o idioma
+    function toggleLanguage() {
+        if (window.i18n) {
+            const currentLocale = window.i18n.getCurrentLocale();
+            const newLocale = currentLocale === 'pt-BR' ? 'en-US' : 'pt-BR';
+            window.i18n.changeLocale(newLocale);
+        }
+    }
+
+    // Event listeners para os botões
+    if (langToggle) {
+        langToggle.addEventListener('click', toggleLanguage);
+    }
+
+    if (langToggleMobile) {
+        langToggleMobile.addEventListener('click', toggleLanguage);
+    }
+
+    // Escutar evento de mudança de idioma para atualizar os botões
+    window.addEventListener('localeChanged', function(event) {
+        updateLanguageButtons(event.detail.locale);
+    });
+
+    // Atualizar botões quando o i18n estiver pronto
+    window.addEventListener('load', function() {
+        if (window.i18n) {
+            const currentLocale = window.i18n.getCurrentLocale();
+            updateLanguageButtons(currentLocale);
+        }
+    });
 });

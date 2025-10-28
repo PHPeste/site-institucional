@@ -1,0 +1,290 @@
+{
+  "meta": {
+    "title": "PHPeste - The Largest PHP Conference in Northeast Brazil",
+    "description": "Annual, community-driven, and itinerant event that brings together PHP developers from across the Northeast. Promoting inclusion, technology, and appreciation of Northeastern culture since 2015.",
+    "keywords": "PHPeste, PHP, Northeast Brazil, Conference, Technology, Development, Programming, PHP Northeast, Tech Event, PHP Community, PHP Brazil",
+    "language": "English",
+    "ogLocale": "en_US",
+    "inLanguage": "en-US"
+  },
+  "nav": {
+    "about": "About",
+    "impact": "Impact",
+    "communities": "Communities",
+    "support": "Why Support?",
+    "editions": "Editions",
+    "statute": "Statute"
+  },
+  "hero": {
+    "logoAlt": "PHPeste - The largest PHP conference in Northeast Brazil",
+    "since": "Since 2015",
+    "subtitle": "The largest PHP communities conference in Northeast Brazil",
+    "description": "Connecting developers, sharing knowledge and celebrating the Northeastern PHP community",
+    "cta": "Learn more",
+    "ctaAriaLabel": "Learn more about PHPeste"
+  },
+  "about": {
+    "heading": "About the Conference",
+    "paragraph1": "PHPeste is an <strong>amazing technology and development gathering</strong> that brings together the \"awesome\" communities from all over the Northeast!",
+    "paragraph2": "Before PHPeste, most major tech events took place in the South and Southeast of the country, which left many people here without access to this type of experience. That's where the idea came from to create a traveling conference, to bring technology, knowledge, and opportunity closer to the Northeastern people, strengthening our local communities.",
+    "paragraph3": "Since then, the PHPeste conference has traveled through many great places — <strong>João Pessoa (PB), Salvador (BA), Fortaleza (CE), São Luís (MA), Recife (PE), Natal (RN), and Parnaíba (PI)</strong> — spreading learning, practice, and lots of networking among professionals, students, and technology enthusiasts.",
+    "paragraph4": "It's <strong>three days of pure immersion</strong>, filled with inspiring talks, hands-on workshops, and activities to exchange ideas and make friends with \"awesome people\" who come from all over to share experiences and strengthen our community.",
+    "paragraph5": "The PHPeste conference is organized <strong>collaboratively and as a non-profit</strong>, organized by volunteers from the nine Northeastern states — Alagoas, Bahia, Ceará, Maranhão, Paraíba, Pernambuco, Piauí, Rio Grande do Norte, and Sergipe. All of this to reduce costs, lower ticket prices, and ensure that more people can participate, learn, and grow together.",
+    "paragraph6": "Here, there's no shortage of passion, friendship, and the desire to make the Northeast shine even brighter in the tech scene!"
+  },
+  "impact": {
+    "heading": "Our Impact",
+    "subtitle": "A decade connecting developers and strengthening the PHP ecosystem in the Northeast",
+    "participants": "Participants",
+    "participantsDetail": "Over 9 editions",
+    "editions": "Editions Held",
+    "editionsDetail": "From 2015 to 2025",
+    "states": "Northeastern States",
+    "statesDetail": "PB, BA, CE, MA, PE, RN, PI",
+    "reach": "Social Media Reach",
+    "reachDetail": "Estimated tech audience",
+    "years": "Years of History",
+    "yearsDetail": "2015 - 2025",
+    "communities": "Partner Communities",
+    "communitiesDetail": "From all over Brazil",
+    "days": "Days of Immersion",
+    "daysDetail": "Per edition",
+    "nonprofit": "Non-Profit",
+    "nonprofitDetail": "Volunteer organization"
+  },
+  "communities": {
+    "heading": "Partner Communities"
+  },
+  "support": {
+    "heading": "Why Support?",
+    "paragraph1": "The PHPeste conference brings together a <strong>diverse and engaged audience</strong>, made up of developers, architects, software engineers, IT managers, enthusiasts, and entrepreneurs from all over the Northeast.",
+    "paragraph2": "Supporting PHPeste means <strong>associating your brand with a collaborative initiative</strong> that promotes learning, innovation, and the country's technological development. In addition to wide visibility, the conference offers an excellent opportunity to train teams, present solutions, recruit talent, and establish new business partnerships.",
+    "paragraph3": "With editions that have already featured <strong>prominent national and international names</strong>, PHPeste involves a vibrant and active community throughout Brazil. Today, the conference reaches more than <strong>7,000 people directly</strong> in Telegram groups, Instagram, X (Twitter), and Facebook, as well as impacting an estimated tech audience of more than <strong>200,000 users</strong> on social media, a highly qualified audience connected to the technology universe.",
+    "benefitsHeading": "Benefits of Supporting PHPeste",
+    "benefitVisibility": "Regional Visibility",
+    "benefitVisibilityDesc": "Presence in 7 Northeastern states, reaching developers from across the region.",
+    "benefitAudience": "Qualified Audience",
+    "benefitAudienceDesc": "Developers, software architects, IT managers, and technology enthusiasts.",
+    "benefitNetworking": "Networking",
+    "benefitNetworkingDesc": "Direct connection with Northeastern tech talent and community leaders.",
+    "benefitSocial": "Social Responsibility",
+    "benefitSocialDesc": "Associate your brand with inclusion, regional development, and appreciation of diversity.",
+    "benefitRecruitment": "Recruitment",
+    "benefitRecruitmentDesc": "Direct access to qualified professionals seeking opportunities.",
+    "benefitDigitalReach": "Digital Reach",
+    "benefitDigitalReachDesc": "Promotion on social media reaching over 200,000 technology professionals.",
+    "ctaHeading": "Want to Support PHPeste?",
+    "ctaDescription": "Get in touch to learn about our sponsorship plans and be part of this story of technological transformation in the Northeast.",
+    "ctaButton": "I Want to Be a Supporter",
+    "ctaTelegram": "Chat on Telegram",
+    "audienceChartHeading": "Audience Over the Years",
+    "audienceChartLabel": "Number of registrants per edition"
+  },
+  "contact": {
+    "heading": "Become Part of PHPeste",
+    "subtitle": "Join the companies supporting technological development in the Northeast",
+    "leftHeading": "Get in Touch",
+    "leftDescription": "We are always open to new partnerships that share our vision of democratizing access to technology and strengthening the development ecosystem in the Northeast.",
+    "email": "Email",
+    "telegram": "Telegram",
+    "socialMedia": "Social Media",
+    "sponsorshipPlans": "Sponsorship Plans",
+    "sponsorshipDescription": "We offer different sponsorship levels to meet each company's needs:",
+    "diamondSponsorship": "Diamond Sponsorship",
+    "goldSponsorship": "Gold Sponsorship",
+    "silverSponsorship": "Silver Sponsorship",
+    "specificSupport": "Specific Support (Coffee break, Registration, etc.)",
+    "nextEditionHeading": "Next Edition",
+    "nextEdition": "PHPeste 2026 - São Luís, MA",
+    "nextEditionDate": "Forecast: October 2026",
+    "whySponsorHeading": "Why sponsor now?",
+    "whySponsor1": "Secure the best sponsorship quotas",
+    "whySponsor2": "Longer brand exposure time",
+    "whySponsor3": "Priority access for customized actions",
+    "whySponsor4": "Participate in the edition planning",
+    "statsHeading": "Stats That Matter",
+    "statsParticipants": "Historical participants",
+    "statsReach": "Social media reach",
+    "statsHistory": "Of history and tradition"
+  },
+  "faq": {
+    "heading": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know about PHPeste sponsorship",
+    "q1": "How does PHPeste sponsorship work?",
+    "a1": "Each edition of PHPeste is organized by the local community of the host state. Sponsorship is directed to the specific edition of the year and the amounts are managed transparently by the organizing community. We offer different sponsorship levels (Diamond, Gold, Silver) and specific support for coffee breaks, registration, giveaways, and other customized actions.",
+    "q2": "What are the available sponsorship categories?",
+    "a2Intro": "Plans vary by edition, but generally include:",
+    "a2Diamond": "<strong>Diamond Sponsorship:</strong> Maximum visibility, featured logo, participant slots, exclusive booth",
+    "a2Gold": "<strong>Gold Sponsorship:</strong> High visibility, logo on materials, participant slots",
+    "a2Silver": "<strong>Silver Sponsorship:</strong> Visibility on materials and social media",
+    "a2Specific": "<strong>Specific Support:</strong> Coffee break, registration, giveaways, speaker accommodation, among others",
+    "q3": "Is sponsorship valid for one edition or the entire event?",
+    "a3": "Sponsorship is directed to the specific edition of the year. As PHPeste is itinerant and each edition is organized by the local community of the host state, sponsorship agreements are made individually for each edition. Companies wishing to support multiple editions are very welcome and can contact us to discuss long-term partnerships.",
+    "q4": "How do I contact you to sponsor?",
+    "a4Intro": "You can contact us through the following channels:",
+    "a4Email": "Email: <a href=\"mailto:contato@phpeste.org\">contato@phpeste.org</a>",
+    "a4Telegram": "Telegram: <a href=\"https://t.me/phpeste\" target=\"_blank\" rel=\"noopener noreferrer\">@phpeste</a>",
+    "a4Footer": "Our team will respond within 48 hours with all information about available sponsorship plans.",
+    "q5": "Can I sponsor only a specific part of the event?",
+    "a5": "Yes! In addition to traditional sponsorship plans, we offer specific support for different moments of the event, such as coffee break, registration, giveaways, speaker accommodation, t-shirt printing, among others. This is an excellent option for companies wishing to support the conference in a more targeted way.",
+    "q6": "What is the expected return on investment when sponsoring PHPeste?",
+    "a6Intro": "The return goes beyond financial and includes:",
+    "a6Visibility": "<strong>Visibility:</strong> Brand exposure to over 200,000 people on social media and hundreds of in-person participants",
+    "a6Recruitment": "<strong>Recruitment:</strong> Direct access to qualified talent in PHP and related technologies",
+    "a6Branding": "<strong>Branding:</strong> Brand association with inclusion, diversity, and social responsibility",
+    "a6Networking": "<strong>Networking:</strong> Connection with tech community leaders from across the Northeast",
+    "a6Impact": "<strong>Social Impact:</strong> Real contribution to the region's technological development",
+    "q7": "Does PHPeste issue invoices?",
+    "a7": "Each edition of PHPeste is organized by the local community, which may have different legal structures (associations, individual entrepreneurs, partner companies). Formalization and invoice issuance issues are handled directly with the organization of the specific edition. Contact us to discuss the best options for your company.",
+    "ctaQuestion": "Didn't find the answer you were looking for?",
+    "ctaButton": "Contact Us"
+  },
+  "editions": {
+    "heading": "Editions",
+    "e2015": {
+      "title": "2015 - João Pessoa, PB",
+      "participants": "193 participants",
+      "description": "The first edition of PHPeste took place in João Pessoa, marking the beginning of a journey that would bring technology and knowledge throughout the Northeast."
+    },
+    "e2016": {
+      "title": "2016 - Salvador, BA",
+      "participants": "211 participants",
+      "description": "The second edition reached Bahia, expanding the conference's reach and strengthening the PHP community in the Northeast."
+    },
+    "e2017": {
+      "title": "2017 - Fortaleza, CE",
+      "participants": "296 participants",
+      "description": "Fortaleza received the conference with great enthusiasm, reaching an impressive number of participants."
+    },
+    "e2018": {
+      "title": "2018 - São Luís, MA",
+      "participants": "205 participants",
+      "description": "Maranhão hosted another memorable edition, bringing knowledge and networking to the local community."
+    },
+    "e2019": {
+      "title": "2019 - Recife, PE",
+      "participants": "217 participants",
+      "description": "Recife welcomed the PHP community with all the Pernambuco energy, celebrating technology and innovation."
+    },
+    "e2022": {
+      "title": "2022 - Natal, RN",
+      "participants": "146 participants",
+      "description": "After the pandemic, PHPeste returned in Natal, reconnecting the community in person with great emotion."
+    },
+    "e2023": {
+      "title": "2023 - Fortaleza, CE",
+      "participants": "412 participants",
+      "description": "Fortaleza hosted PHPeste again, breaking the attendance record and consolidating the conference as the largest in the Northeast."
+    },
+    "e2024": {
+      "title": "2024 - Recife, PE",
+      "participants": "325 participants",
+      "description": "Recife hosted the conference again with great success, showing the strength of the Pernambuco community."
+    },
+    "e2025": {
+      "title": "2025 - Parnaíba, PI",
+      "participants": "123 participants",
+      "description": "Piauí hosted this special edition, bringing PHPeste to another Northeastern state and further expanding our community."
+    },
+    "e2026": {
+      "title": "2026 - São Luís, MA",
+      "comingSoon": "Coming soon!",
+      "description": "The next edition is already confirmed! São Luís in Maranhão will once again host PHPeste, promising more learning, networking, and strengthening of the Northeastern tech community.",
+      "stayTuned": "Stay tuned for more news!"
+    }
+  },
+  "statute": {
+    "heading": "Statute",
+    "art1": {
+      "title": "Art. 1 — Nature of the conference",
+      "item1": "PHPeste is an annual, community-driven, independent, and itinerant conference dedicated to promoting the PHP ecosystem in Northeast Brazil, focusing on inclusion, regionality, and professionalization of developers in the region.",
+      "item2": "The conference is non-profit, and all amounts must be returned to the conference. If there is a positive balance, this amount is carried forward to the following year."
+    },
+    "art2": {
+      "title": "Art. 2 — Frequency and location",
+      "item1": "The conference will take place <strong>once a year</strong>.",
+      "item2": "The <strong>host city will always be different</strong> each edition.",
+      "item3": "The conference must <strong>mandatorily take place in a different state of Northeast Brazil</strong> each year, promoting alternation and appreciation of all regional communities.",
+      "item4": "The conference should take place around October 8th, which symbolizes Northeastern Day."
+    },
+    "art3": {
+      "title": "Art. 3 — Local community",
+      "item1": "Hosting PHPeste in a state is <strong>conditional on the existence of an active PHP community</strong> in the state, promoting actions such as meetups, events, groups like PHPinga, etc.",
+      "item2intro": "The <strong>local community will be responsible for organizing the conference</strong> that year.",
+      "item2example": "Example: when the conference takes place in Ceará, the <strong>PHP com Rapadura</strong> community will be responsible."
+    },
+    "art4": {
+      "title": "Art. 4 — Regional identity",
+      "item1": "The conference's visual identity must <strong>reflect the local culture</strong>, promoting the <strong>regionality of the state, city, and the Northeast as a whole</strong>.",
+      "item2intro": "Regionalization should be present in:",
+      "item2sub1": "Graphic arts, t-shirts, banners;",
+      "item2sub2": "Cultural activities (such as bands, food, decoration, etc.);",
+      "item2sub3": "Opening and closing, when possible."
+    },
+    "art5": {
+      "title": "Art. 5 — Proposal and values",
+      "item1intro": "PHPeste focuses on:",
+      "item1sub1": "<strong>Social and professional inclusion</strong>;",
+      "item1sub2": "<strong>Appreciation of local and regional talent</strong>;",
+      "item1sub3": "<strong>Sharing cutting-edge knowledge and stories of overcoming challenges</strong>.",
+      "item2": "Tickets should have <strong>affordable prices</strong> to ensure participation from diverse audiences."
+    },
+    "art6": {
+      "title": "Art. 6 — Speaker selection",
+      "item1": "At least <strong>50% of speakers must be natives or residents of the Northeast</strong>.",
+      "item2": "Among these, <strong>at least 50% must be from the host state of the conference</strong>.",
+      "item3": "The conference must ensure the presence of <strong>at least one speaker from each Northeastern state</strong>.",
+      "item4intro": "The selection process will be done through:",
+      "item4sub1": "Public <strong>Call For Papers (CFP)</strong>;",
+      "item4sub2": "<strong>Direct invitations</strong>, in special cases defined by the organization.",
+      "item5": "It is strongly recommended to have a <strong>minimum quota for women speakers</strong> and historically marginalized groups (interior, LGBTQIAPN+, black people, indigenous people, etc.)."
+    },
+    "art7": {
+      "title": "Art. 7 — Organization and costs",
+      "item1intro": "The organization is <strong>entirely under the responsibility of the local community</strong>, with freedom to define:",
+      "item1sub1": "Sponsorship plans;",
+      "item1sub2": "Funding models (including crowdfunding).",
+      "item2intro": "Speaker accommodation can be:",
+      "item2sub1": "In <strong>a single shared house</strong>, whenever possible, promoting networking;",
+      "item2sub2": "In individual accommodations, at the organization's discretion.",
+      "item3intro": "The organization <strong>is not required to cover travel and accommodation</strong>, but it is recommended to offer a <strong>\"speaker kit\"</strong> with:",
+      "item3sub1": "Accommodation (when possible);",
+      "item3sub2": "Dinner the day before the conference;",
+      "item3sub3": "Local transportation;",
+      "item3sub4": "Breakfast and other amenities."
+    },
+    "art8": {
+      "title": "Art. 8 — Conference experience",
+      "item1": "The conference must be <strong>in-person</strong>, prioritizing interaction and networking among participants.",
+      "item2intro": "It is suggested that:",
+      "item2sub1": "During the <strong>coffee break or registration</strong>, there should be live or recorded typical music;",
+      "item2sub2": "The closing should feature <strong>cultural elements from the host city</strong>."
+    },
+    "art9": {
+      "title": "Art. 9 — Transparency and legacy",
+      "item1intro": "It is recommended that, after each edition, the organizing community:",
+      "item1sub1": "Publish a <strong>summary financial transparency report</strong>;",
+      "item1sub2": "Announce the city and state of the <strong>next conference edition</strong>, if already defined."
+    },
+    "art10": {
+      "title": "Art. 10 — Social networks",
+      "item1intro": "The community has some networks that have existed since the first edition:",
+      "item1sub1": "Telegram <strong>main communication channel</strong>: <a href=\"https://t.me/phpeste\" target=\"_blank\" class=\"text-phpeste-title hover:underline\">https://t.me/phpeste</a>;",
+      "item1sub2": "Instagram <strong>used for general promotion</strong>: <a href=\"https://instagram.com/phpeste\" target=\"_blank\" class=\"text-phpeste-title hover:underline\">https://instagram.com/phpeste</a>."
+    },
+    "art11": {
+      "title": "Art. 11 — Final provisions",
+      "item1": "This statute can be updated by collective decision of the PHP communities of the Northeast, based on practice and needs that arise.",
+      "item2": "The principles of <strong>welcoming, respect for diversity, and appreciation of Northeastern culture</strong> must always be above logistical or technical decisions."
+    }
+  },
+  "footer": {
+    "logoAlt": "PHPeste",
+    "description": "The largest PHP communities conference in Northeast Brazil",
+    "socialMediaHeading": "Social Media",
+    "quickLinksHeading": "Quick Links",
+    "copyright": "© 2015-2025 PHPeste. All rights reserved.",
+    "madeWith": "Made with love by the Northeast PHP community",
+    "backToTop": "Back to top"
+  }
+}
