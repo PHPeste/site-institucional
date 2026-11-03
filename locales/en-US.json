@@ -37,15 +37,15 @@
     "heading": "Our Impact",
     "subtitle": "A decade connecting developers and strengthening the PHP ecosystem in the Northeast",
     "participants": "Participants",
-    "participantsDetail": "Over 9 editions",
+    "participantsDetail": "Over 10 editions",
     "editions": "Editions Held",
-    "editionsDetail": "From 2015 to 2025",
+    "editionsDetail": "From 2015 to 2026",
     "states": "Northeastern States",
     "statesDetail": "PB, BA, CE, MA, PE, RN, PI",
     "reach": "Social Media Reach",
     "reachDetail": "Estimated tech audience",
     "years": "Years of History",
-    "yearsDetail": "2015 - 2025",
+    "yearsDetail": "2015 - 2026",
     "communities": "Partner Communities",
     "communitiesDetail": "From all over Brazil",
     "days": "Days of Immersion",
@@ -96,8 +96,8 @@
     "silverSponsorship": "Silver Sponsorship",
     "specificSupport": "Specific Support (Coffee break, Registration, etc.)",
     "nextEditionHeading": "Next Edition",
-    "nextEdition": "PHPeste 2026 - São Luís, MA",
-    "nextEditionDate": "Forecast: October 2026",
+    "nextEdition": "PHPeste 2027 - João Pessoa, PB",
+    "nextEditionDate": "Forecast: October 8th and 9th, 2027",
     "whySponsorHeading": "Why sponsor now?",
     "whySponsor1": "Secure the best sponsorship quotas",
     "whySponsor2": "Longer brand exposure time",
@@ -189,8 +189,13 @@
     },
     "e2026": {
       "title": "2026 - São Luís, MA",
+      "participants": "330 participants",
+      "description": "São Luís in Maranhão once again hosted PHPeste, on October 16th and 17th, bringing together 330 participants and promoting more learning, networking, and strengthening of the Northeastern tech community."
+    },
+    "e2027": {
+      "title": "2027 - João Pessoa, PB",
       "comingSoon": "Coming soon!",
-      "description": "The next edition is already confirmed! São Luís in Maranhão will once again host PHPeste, promising more learning, networking, and strengthening of the Northeastern tech community.",
+      "description": "The next edition is already confirmed! João Pessoa will once again host PHPeste, on October 8th and 9th, promising more learning, networking, and strengthening of the Northeastern tech community.",
       "stayTuned": "Stay tuned for more news!"
     }
   },
@@ -206,6 +211,7 @@
     "edition2023": "2023 - Fortaleza, CE",
     "edition2024": "2024 - Recife, PE",
     "edition2025": "2025 - Parnaíba, PI",
+    "edition2026": "2026 - São Luís, MA",
     "viewImage": "View image",
     "closeModal": "Close"
   },
@@ -299,7 +305,7 @@
     "description": "The largest PHP communities conference in Northeast Brazil",
     "socialMediaHeading": "Social Media",
     "quickLinksHeading": "Quick Links",
-    "copyright": "© 2015-2025 PHPeste. All rights reserved.",
+    "copyright": "© 2015-2026 PHPeste. All rights reserved.",
     "madeWith": "Made with love by the Northeast PHP community",
     "backToTop": "Back to top"
   }
