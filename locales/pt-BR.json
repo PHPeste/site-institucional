@@ -37,15 +37,15 @@
     "heading": "Nosso Impacto",
     "subtitle": "Uma década conectando desenvolvedores e fortalecendo o ecossistema PHP do Nordeste",
     "participants": "Participantes",
-    "participantsDetail": "Ao longo de 9 edições",
+    "participantsDetail": "Ao longo de 10 edições",
     "editions": "Edições Realizadas",
-    "editionsDetail": "De 2015 a 2025",
+    "editionsDetail": "De 2015 a 2026",
     "states": "Estados Nordestinos",
     "statesDetail": "PB, BA, CE, MA, PE, RN, PI",
     "reach": "Alcance nas Redes",
     "reachDetail": "Audiência tech estimada",
     "years": "Anos de História",
-    "yearsDetail": "2015 - 2025",
+    "yearsDetail": "2015 - 2026",
     "communities": "Comunidades Parceiras",
     "communitiesDetail": "De todo o Brasil",
     "days": "Dias de Imersão",
@@ -96,8 +96,8 @@
     "silverSponsorship": "Patrocínio Prata",
     "specificSupport": "Apoio Específico (Coffee break, Credenciamento, etc.)",
     "nextEditionHeading": "Próxima Edição",
-    "nextEdition": "PHPeste 2026 - São Luís, MA",
-    "nextEditionDate": "Previsão: Outubro de 2026",
+    "nextEdition": "PHPeste 2027 - João Pessoa, PB",
+    "nextEditionDate": "Previsão: 8 e 9 de Outubro de 2027",
     "whySponsorHeading": "Por que patrocinar agora?",
     "whySponsor1": "Garanta as melhores cotas de patrocínio",
     "whySponsor2": "Maior tempo de divulgação da sua marca",
@@ -189,8 +189,13 @@
     },
     "e2026": {
       "title": "2026 - São Luís, MA",
+      "participants": "330 participantes",
+      "description": "São Luís do Maranhão recebeu novamente a PHPeste, nos dias 16 e 17 de outubro, reunindo 330 participantes e promovendo mais aprendizado, networking e fortalecimento da comunidade tech nordestina."
+    },
+    "e2027": {
+      "title": "2027 - João Pessoa, PB",
       "comingSoon": "Em breve!",
-      "description": "A próxima edição já está confirmada! São Luís do Maranhão receberá novamente a PHPeste, prometendo mais aprendizado, networking e fortalecimento da comunidade tech nordestina.",
+      "description": "A próxima edição já está confirmada! João Pessoa receberá novamente a PHPeste, nos dias 8 e 9 de outubro, prometendo mais aprendizado, networking e fortalecimento da comunidade tech nordestina.",
       "stayTuned": "Fique ligado para mais novidades!"
     }
   },
@@ -206,6 +211,7 @@
     "edition2023": "2023 - Fortaleza, CE",
     "edition2024": "2024 - Recife, PE",
     "edition2025": "2025 - Parnaíba, PI",
+    "edition2026": "2026 - São Luís, MA",
     "viewImage": "Ver imagem",
     "closeModal": "Fechar"
   },
@@ -299,7 +305,7 @@
     "description": "A maior conferência de comunidades PHP do Nordeste Brasileiro",
     "socialMediaHeading": "Redes Sociais",
     "quickLinksHeading": "Links Rápidos",
-    "copyright": "© 2015-2025 PHPeste. Todos os direitos reservados.",
+    "copyright": "© 2015-2026 PHPeste. Todos os direitos reservados.",
     "madeWith": "Feito com amor pela comunidade PHP do Nordeste",
     "backToTop": "Voltar ao topo"
   }

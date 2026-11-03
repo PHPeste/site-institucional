@@ -76,7 +76,8 @@ Linha do tempo interativa mostrando todas as edições da PHPeste:
 - 2023 - Fortaleza, CE (412 participantes)
 - 2024 - Recife, PE (325 participantes)
 - 2025 - Parnaíba, PI (123 participantes)
-- 2026 - São Luís, MA (em breve)
+- 2026 - São Luís, MA (330 participantes)
+- 2027 - João Pessoa, PB (em breve)
 
 ## Funcionalidades
 
